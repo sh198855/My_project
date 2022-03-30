@@ -105,6 +105,15 @@ header{
   align-items: center;
 }
 
+.image_items{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+img{
+  margin-right: 5px;
+}
+
 .block_items{
   display: flex;
   gap: 24px;
