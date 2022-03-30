@@ -102,7 +102,12 @@ header{
   display: flex;
   justify-content: space-between;
   height: 100%;
-  align-items: stretch;
+  align-items: center;
+}
+
+.block_items{
+  display: flex;
+  gap: 24px;
 }
 
 .block_nav{
@@ -152,7 +157,7 @@ header{
 
 .second_nav_element a{
     text-decoration: none;
-    color: #868181;
+    color: #6B6B6B;
     font-family: 'Value Sans Pro';
     font-style: normal;
     font-weight: 700;
