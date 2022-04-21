@@ -81,7 +81,7 @@ select {
 
 header{
     width: 100%;
-    
+    position: fixed;
 }
 
 .head_shadow{
@@ -90,6 +90,7 @@ header{
 }
 
 main{
+  display: flex;
   width: 100%;
 }
 
@@ -104,10 +105,12 @@ main{
 
 
 .block_head{
+    display: flex;
     width: 100%;
 }
 
 .block_first{
+    display: flex;
     background-color: #274646;
     height: 52px;
 }
@@ -125,8 +128,25 @@ main{
   align-items: center;
 }
 .img_log{
+  display: flex;
   margin-right: 10px;
 }
+
+/* for changing display in madia_content */
+.phone{
+  display: flex;
+}
+.hide{
+  display: flex;
+}
+
+.img_fr_log{
+  display: none;
+}
+.move_right{
+  display: flex;
+}
+/* end of changing display in madia_content */
 
 .block_items{
   display: flex;
@@ -134,6 +154,7 @@ main{
 }
 
 .block_nav{
+    display: flex;
     background-color: #FFFFFF;
     height: 52px;
 }
@@ -167,6 +188,7 @@ main{
 }
 
 .block_second_nav{
+  display: flex;
   background-color: #FFFFFF;
   height: 52px;
 }
@@ -211,14 +233,43 @@ main{
 
 /*CONTAINERS*/
 
-@media(max-width: 576px){
-  .container{
-    width: 100%;
+
+@media (max-width: 576px) {
+  .container {
+      width: 100%;
+  }
+  .phone{
+    display: none;
+  }
+  .nav_border{
+    display: flexbox;
+  }
+  .hide{
+    display: none;
+  }
+  .img_fr_log{
+    display: flex;
+  }
+  .move_right{
+    align-items: flex-end;
   }
 }
+
 @media (min-width: 577px) and (max-width: 768px) {
   .container {
       width: 540px;
+  }
+  .phone{
+    display: none;
+  }
+  .nav_border{
+    display: flexbox;
+  }
+  .hide{
+    display: none;
+  }
+  .img_fr_log{
+    display: flex;
   }
 }
 
@@ -226,6 +277,13 @@ main{
   .container {
       width: 720px;
   }
+  .phone{
+    display: none;
+  }
+  .nav_border{
+    display: flexbox;
+  }
+    
 }
 
 @media (min-width: 993px) and  (max-width: 1200px) {
