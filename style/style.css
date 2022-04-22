@@ -241,9 +241,6 @@ main{
   .phone{
     display: none;
   }
-  .nav_border{
-    display: flexbox;
-  }
   .hide{
     display: none;
   }
@@ -252,6 +249,9 @@ main{
   }
   .move_right{
     align-items: flex-end;
+  }
+  .nav_border{
+    flex-direction: row;
   }
 }
 
@@ -262,15 +262,19 @@ main{
   .phone{
     display: none;
   }
-  .nav_border{
-    display: flexbox;
-  }
   .hide{
     display: none;
   }
   .img_fr_log{
     display: flex;
   }
+  .move_right{
+    align-items: flex-end;
+  }
+  .nav_border{
+    flex-direction: row;
+  }
+  
 }
 
 @media (min-width: 769px) and  (max-width: 992px) {
@@ -281,9 +285,8 @@ main{
     display: none;
   }
   .nav_border{
-    display: flexbox;
+    flex-direction: row;
   }
-    
 }
 
 @media (min-width: 993px) and  (max-width: 1200px) {
