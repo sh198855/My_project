@@ -127,15 +127,30 @@ main{
   justify-content: flex-start;
   align-items: center;
 }
+
 .img_log{
   display: flex;
   margin-right: 10px;
+}
+.price{
+    margin-left: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
 
 /* for changing display in madia_content */
 .phone{
   display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #A0A0A0;
+  text-decoration: none;
 }
+
 .hide{
   display: flex;
 }
@@ -149,6 +164,11 @@ main{
 /* end of changing display in madia_content */
 
 .block_items{
+  display: flex;
+  gap: 24px;
+}
+
+.block_items_right{
   display: flex;
   gap: 24px;
 }
@@ -236,13 +256,10 @@ main{
 
 @media (max-width: 576px) {
   .container {
-      width: 100%;
+    width: 100%;
   }
   .phone{
     display: none;
-  }
-  .nav_border{
-    display: flexbox;
   }
   .hide{
     display: none;
@@ -250,20 +267,24 @@ main{
   .img_fr_log{
     display: flex;
   }
-  .move_right{
-    align-items: flex-end;
+  .block_items_right{
+    display: none;
+  }
+  .block_items{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav_border{
+    gap: 48px;
   }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
   .container {
-      width: 540px;
+    width: 540px;
   }
   .phone{
     display: none;
-  }
-  .nav_border{
-    display: flexbox;
   }
   .hide{
     display: none;
@@ -271,35 +292,54 @@ main{
   .img_fr_log{
     display: flex;
   }
+  .block_items_right{
+    display: none;
+  }
+  .block_items{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav_border{
+    gap: 48px;
+  }
 }
 
 @media (min-width: 769px) and  (max-width: 992px) {
   .container {
-      width: 720px;
+    width: 720px;
   }
   .phone{
     display: none;
   }
-  .nav_border{
-    display: flexbox;
+  .image_items_right{
+    display: none;
   }
-    
+  .block_items{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav_border{
+    gap: 48px;
+  } 
 }
 
 @media (min-width: 993px) and  (max-width: 1200px) {
   .container {
-      width: 960px;
+    width: 960px;
+  }
+  .nav_border{
+    gap: 48px;
   }
 }
 
 @media (min-width: 1201px) and (max-width:1400px) {
   .container {
-      width: 1140px;
+    width: 1140px;
   }
 }
 
 @media (min-width:1401px) {
   .container {
-      width: 1320px;
+    width: 1320px;
   }
 }
