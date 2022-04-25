@@ -251,7 +251,7 @@ main{
     align-items: flex-end;
   }
   .nav_border{
-    flex-direction: row;
+    width: auto;
   }
 }
 
@@ -272,7 +272,7 @@ main{
     align-items: flex-end;
   }
   .nav_border{
-    flex-direction: row;
+    width: auto;
   }
   
 }
@@ -285,7 +285,7 @@ main{
     display: none;
   }
   .nav_border{
-    flex-direction: row;
+    width: auto;
   }
 }
 
