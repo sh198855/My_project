@@ -254,6 +254,7 @@ main{
 
 /*////////////////////////////////MAIN_BLOCK///////////////////////////////*/
 
+/*  Cards  */
 .container_main{
   width: 1400px;
   margin: 0 auto;
@@ -277,6 +278,52 @@ main{
   min-height: 270px;
   min-width: 152px;
 } 
+/*  End_Cards  */
+
+/* rols_block  */
+
+.rols_block{
+  padding-top: 48px;
+}
+
+.rols_tape{
+  background: linear-gradient(0deg, #F293A2 -0.01%, #F7BDC7 99.99%);
+  position: static;
+  width: 100%;
+  height: 100px;
+}
+.scrol_block_rols{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  gap: 76px;
+}
+
+.scrol_block_rols::-webkit-scrollbar{
+  display: none;
+}
+
+.rols_text{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFD8E1;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: Rimma_sans;
+  line-height: 100%;
+}
+
+
+
+/* end_rols_block  */
+
+
+
 
 /*////////////////////////////////END_MAIN_BLOCK///////////////////////////////*/
 
