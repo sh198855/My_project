@@ -82,6 +82,8 @@ select {
 header{
     width: 100%;
     position: fixed;
+    border-top: 0px solid #aaaaaa;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .head_shadow{
@@ -90,8 +92,7 @@ header{
 }
 
 main{
-  display: flex;
-  width: 100%;
+  padding-top: 130px;
 }
 
 .container {
@@ -248,6 +249,36 @@ main{
     align-items: stretch;
     gap: 20px;
 }
+
+/*////////////////////////////////END_OF_HEADER///////////////////////////////*/
+
+/*////////////////////////////////MAIN_BLOCK///////////////////////////////*/
+
+.container_main{
+  width: 1400px;
+  margin: 0 auto;
+}
+.cards_block{
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.nav_border_therd{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.therd_nav_element{
+  border: 2px solid #FFBEC9;
+  border-radius: 16px; 
+  padding: 1px;
+  min-height: 270px;
+  min-width: 152px;
+} 
+
+/*////////////////////////////////END_MAIN_BLOCK///////////////////////////////*/
 
 
 /*//////////////////////////////////////////MEDIA REQUESR//////////////////////////////*/
