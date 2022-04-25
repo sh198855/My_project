@@ -185,6 +185,8 @@ main{
     height: 100%;
     border-bottom: 1px solid #E5E5E5;
     align-items: stretch;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .nav_element{
