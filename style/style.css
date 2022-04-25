@@ -318,7 +318,43 @@ main{
   line-height: 100%;
 }
 
+.first_category_section{
+  margin-top: 64px;
+}
 
+.section_classic{
+  margin-top: 64px;
+  font-family: ValueSansPro_mid;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  color: #274646;
+}
+
+.cards_of_section{
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  row-gap: 24px;
+  column-gap: 32px;
+}
+
+.card_of_section{
+  padding: 16px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.imgs_of_section{
+  width: auto;
+  height: auto;
+}
+
+.img_icons{
+  display: flex;
+  gap: 8px;
+  top: 0px;
+  left: 0px;
+}
 
 /* end_rols_block  */
 
