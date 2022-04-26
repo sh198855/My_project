@@ -333,6 +333,46 @@ header{
   color: #006666;
 }
 
+.animation_tape_rolls{
+  animation-name: animation_rolls 3s linear infinite;
+}
+
+.animation_tape_sushi{
+  animation-name: animation_sushi 3s linear infinite;
+}
+
+.animation_tape_poke{
+  animation-name: animation_poke 3s linear infinite;
+}
+
+@keyframes animation_rolls{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-533.766px);
+  }
+}
+
+@keyframes animation_tape_sushi {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-450.766px);
+  }
+}
+
+@keyframes animation_poke {
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-942.8px);
+  }
+}
+
+
 .product_title{
   display: flex;
   margin: 0;
