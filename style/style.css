@@ -306,7 +306,7 @@ header{
   width: 100%;
 }
 
-.rols_block{
+.title_block{
   display: flex;
   margin: 0;
   gap: 176px;
@@ -324,7 +324,16 @@ header{
   color: #FFD8E1;
 }
 
-.rols_text{
+.sushi_block_color{
+  background: linear-gradient(0deg, #F9B147 -0.01%, #FDC944 99.99%);
+  color: #FFE091;
+}
+.poke_block_color{
+  background: linear-gradient(0deg, #001918 0%, #003D3D 100%);
+  color: #006666;
+}
+
+.product_title{
   display: flex;
   margin: 0;
   line-height: 100%;
@@ -334,11 +343,11 @@ header{
 }
 /*______END_TAPE______*/
 
-.first_section{
+.Section{
   margin-top: 64px;
 }
 
-.section_classic{
+.section_name{
   font-family: 'Value Sans Pro';
   font-style: normal;
   font-weight: 500;
@@ -356,13 +365,8 @@ header{
 
 .card_of_section{
   display: grid;
-  grid-template-areas: 
-  "card-pictures"
-  "card-description"
-  ;
   grid-template-rows: 200px auto;
-  position: relative;
-  max-width: 274px;
+  max-width: 300px;
   padding: 16px;
   outline: 2px solid #FFF;
   border-radius: 8px;
