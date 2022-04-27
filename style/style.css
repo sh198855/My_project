@@ -129,6 +129,7 @@ header{
   margin-right: 10px;
 }
 .price{
+    font-family: 'Value Sans Pro';
     margin-left: 8px;
     font-style: normal;
     font-weight: 700;
@@ -334,15 +335,15 @@ header{
 }
 
 .animation_tape_rolls{
-  animation-name: animation_rolls 3s linear infinite;
+  animation: animation_rolls 3s linear infinite;
 }
 
 .animation_tape_sushi{
-  animation-name: animation_sushi 3s linear infinite;
+  animation: animation_sushi 3s linear infinite;
 }
 
 .animation_tape_poke{
-  animation-name: animation_poke 3s linear infinite;
+  animation: animation_poke 3s linear infinite;
 }
 
 @keyframes animation_rolls{
@@ -354,7 +355,7 @@ header{
   }
 }
 
-@keyframes animation_tape_sushi {
+@keyframes animation_sushi {
   from{
     transform: translateX(0);
   }
@@ -399,7 +400,7 @@ header{
 
 .cards_of_section{
   display: grid;
-  gap: 27px;
+  gap: 24px;
   grid-template-columns: repeat(4, 3fr);
 }
 
@@ -502,10 +503,20 @@ header{
   color: #FFFFFF;
   background: #274646;
 }
-/* end_rols_block  */
+/* end_product_block  */
 
-
-
+.block_for_phone_version{
+  display: none;
+  width: 396px;
+  border-radius: 20%;
+  border: 1px;
+  height: 50px;
+  background-color: #274646;
+  justify-content: space-between;
+}
+.bascket{
+  display: flex;
+}
 
 /*////////////////////////////////END_MAIN_BLOCK///////////////////////////////*/
 
@@ -539,6 +550,12 @@ header{
   .nav_border{
     gap: 48px;
   }
+  .cards_of_section{
+    grid-template-columns: repeat(1, 3fr);
+  }
+  .block_for_phone_version{
+    display: flex;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -564,6 +581,9 @@ header{
   .nav_border{
     gap: 48px;
   }
+  .cards_of_section{
+    grid-template-columns: repeat(1, 3fr);
+  }
 }
 
 @media (min-width: 769px) and  (max-width: 992px) {
@@ -575,7 +595,6 @@ header{
   }
   .image_items_right{
     display: none;
-
   }
   .block_items{
     width: 100%;
@@ -584,6 +603,9 @@ header{
   .nav_border{
     gap: 48px;
   } 
+  .cards_of_section{
+    grid-template-columns: repeat(2, 3fr);
+  }
 }
 
 @media (min-width: 993px) and  (max-width: 1200px) {
