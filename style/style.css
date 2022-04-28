@@ -91,7 +91,7 @@ header{
 }
 
 .container {
-  width: 1400px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -126,8 +126,43 @@ header{
 
 .img_log{
   display: flex;
-  margin-right: 10px;
+  margin-right: 8px;
 }
+
+.right_shiming{
+  font-family: 'Value Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFBDC8;
+}
+
+.left_block_adress{
+  font-family: 'Value Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFE091;
+}
+
+.count_product{
+  border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  padding-top: 2.5px;
+  padding-left: 2.5px;
+  background: #B20D30;
+  font-family: 'Value Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+
+}
+
 .price{
     font-family: 'Value Sans Pro';
     margin-left: 8px;
@@ -176,7 +211,6 @@ header{
 
 .nav_border{
     display: flex;
-    justify-content: space-between;
     height: 100%;
     border-bottom: 1px solid #E5E5E5;
     align-items: stretch;
@@ -186,6 +220,7 @@ header{
 
 .nav_element{
     display: flex;
+    margin-right: 51px;
     justify-content: center;
     align-items: center;
 }
@@ -546,13 +581,89 @@ header{
   .block_items{
     width: 100%;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 16px;
   }
   .nav_border{
     gap: 48px;
   }
-  .cards_of_section{
-    grid-template-columns: repeat(1, 3fr);
+
+  /*---main---*/
+  .Section{
+    margin-left: 16.14px;
   }
+
+  .cards_of_section{
+    grid-template-columns: repeat(1, 12fr);
+    gap: 5px;
+  }
+
+  .title_block{
+    margin: 36px, 0, 64, 0;
+    height: 80px;
+    font-size: 60px;
+  }
+
+  .imgs_of_section{
+    grid-template-columns: repeat(1, 12fr);
+    margin-bottom: 21px;
+  }
+
+  .left_inform_part{
+    grid-template-columns: repeat(1, 12fr);
+    justify-content: flex-start;
+  }
+
+  .img_icon_main{
+    max-width: 136px;
+    max-height: 99px; 
+  }
+  .card_of_section{
+    grid-template-columns: minmax(70px, 136px) auto;
+    max-width: none;
+    gap: 0 20px;
+    padding: 16px 16px 4px 16px;
+    grid-template-rows: auto;
+  }
+
+  .left_inform_value_1{
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #274646;
+  }
+
+  .left_inform_value_2{
+    display: none;
+  }
+  .inform_oldprice{
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .inform_newprice{
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 14px;
+    margin: 0 7px 16px 0;
+  }
+
+  .left_inform_part{
+    margin-bottom: 28px;
+  }
+  
+  .right_inform_part{
+    flex-wrap: wrap;
+  }
+    /*---end_main---*/
   .block_for_phone_version{
     display: flex;
   }
@@ -581,9 +692,17 @@ header{
   .nav_border{
     gap: 48px;
   }
+
+  /*---main---*/
   .cards_of_section{
-    grid-template-columns: repeat(1, 3fr);
+    grid-template-columns: repeat(2, 6fr);
   }
+  .card_of_section{
+    max-width: none;
+    grid-template-rows: 200px auto;
+    padding: 10px;
+  }
+  /*---end_main---*/
 }
 
 @media (min-width: 769px) and  (max-width: 992px) {
@@ -603,9 +722,25 @@ header{
   .nav_border{
     gap: 48px;
   } 
+
+  /*---main---*/
   .cards_of_section{
-    grid-template-columns: repeat(2, 3fr);
+    gap: 32px 26px;
   }
+  .card_of_section{
+    max-width: none;
+    grid-template-rows: 200px auto;
+    padding: 10px;
+  }
+  .Section{
+    margin: 0 5.5px;
+  }
+  .section_name{
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 31px;
+  }
+    /*---end_main---*/
 }
 
 @media (min-width: 993px) and  (max-width: 1200px) {
@@ -615,12 +750,37 @@ header{
   .nav_border{
     gap: 48px;
   }
+  /*---main---*/
+  .cards_of_section{
+    grid-template-columns: repeat(4, 3fr);
+  }
+  .card_of_section{
+    grid-template-rows: 200px auto;
+    padding: 10px;
+  }
+  .imgs_of_section{
+    max-height: 200px;
+ 
+  }
+  /*---end_main---*/
 }
 
 @media (min-width: 1201px) and (max-width:1400px) {
   .container {
     width: 1140px;
   }
+  /*---main---*/
+  .cards_of_section{
+    margin-left: none;
+  }
+  .card_of_section{
+    grid-template-rows: 200px auto;
+    padding: 10px;
+  }
+  .imgs_of_section{
+    height: 200px;
+  }
+  /*---end_main---*/
 }
 
 @media (min-width:1401px) {
