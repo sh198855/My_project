@@ -277,6 +277,8 @@ header{
     padding: 8px 0px;
     align-items: stretch;
     gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 /*////////////////////////////////END_OF_HEADER///////////////////////////////*/
@@ -542,12 +544,18 @@ header{
 
 .block_for_phone_version{
   display: none;
+  position: fixed;
+  justify-content: space-between;
+  bottom: 10px;
   width: 396px;
-  border-radius: 20%;
-  border: 1px;
+  border-radius: 50px 50px 50px 50px;
+  border: 1px solid;
   height: 50px;
   background-color: #274646;
-  justify-content: space-between;
+  padding: 17px;
+  margin-left: 16px;
+  margin-right: 16px;
+  z-index: 100;
 }
 .bascket{
   display: flex;
@@ -715,10 +723,7 @@ header{
   .image_items_right{
     display: none;
   }
-  .block_items{
-    width: 100%;
-    justify-content: space-between;
-  }
+
   .nav_border{
     gap: 48px;
   } 
