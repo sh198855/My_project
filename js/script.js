@@ -6,7 +6,6 @@
     let drag = false;
     let left = 0;
     let position_X = 0;
-
     scrolls.addEventListener('mousedown', function(e){
         drag = true;
         position_X = e.pageX - this.offsetLeft;
@@ -17,15 +16,29 @@
     });
     scrolls.addEventListener('mousemove', function(e){
         if(drag){
-            this.scrollLeft = left + (e.pageX - this.offsetLeft - position_X)*speed;
+            this.scrollLeft = left - (e.pageX - this.offsetLeft - position_X)*speed;
         }
     });
 
     scroll_item.forEach((item)=>{
-
         item.addEventListener('mousedown', function(e){
-            e.preventDefault();
-        })
-    }) ();
+            e.preventDefault();})
+    })
     
-});
+}());
+
+(function(){
+
+    var products = [
+        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'}
+    ]
+
+    
+
+}());
