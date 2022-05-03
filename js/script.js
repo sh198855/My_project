@@ -31,12 +31,13 @@
 
     var products = [
         {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
-        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
-        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
-        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
-        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
-        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
-        {id :1, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'}
+        {id :2, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :3, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :4, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :5, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :6, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'},
+        {id :7, price:1925, title:'Филадельфия люкс', description: '8 шт./350 гр.'}
+        
     ]
 
     
