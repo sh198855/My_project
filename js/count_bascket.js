@@ -1,14 +1,10 @@
+//счёт количество товаров и вывод его на '.count_product'
+
+
 class Counter{
-    render(count, summ){
-        const html = `
-        <div>
-            <div>${count}</div>
-            <p>${summ}</p>
-        </div>
-        `;
+    render(count){
 
         document.querySelector('.count_product').innerHTML = count;
-        document.querySelector('.price').innerHTML = summ;
 
     }
 }
@@ -16,4 +12,3 @@ class Counter{
 const counterPage = new Counter();
 const bascket_count = bascket_localstorage.getProducts();
 counterPage.render(bascket_count.length);
-//summ needs be realized

@@ -1,37 +1,29 @@
+//добавить элемент в localstorage при нажатии на кнопку
+
 class Products{
     
-    handleSetLocationStorage(element, id){     //добавить элемент в localstorage при нажатии на кнопку
-        const {products} =  bascket_localstorage.putProducts(id);
-        counterPage.render(products.length);
-        //console.log(element, id)
+    handleSetLocationStorage(id){
+        const {products} =  bascket_localstorage.putProducts(id); // вызываем метод из Bascket_localstorage
+        counterPage.render(products.length); // для синхронного вывода счёта количества товаров 
     }
 
     render(){
-        let htmlCatalog = '';
-        PRODUCTS.forEach(({id, price, title, description, oldPrice}) => {
-       
-        htmlCatalog += `
-        <div>
-            <span>${title}</span>
-            <span>${description}</span>
-        </div>
-        <div>
-            <span>${oldPrice}</span>
-            <button onclick="productPage.handleSetLocationStorage(this, '${id}')">${price}</button>
-        </div>
-        `;
-    });
-    const html =`
-        <div>
-            ${htmlCatalog}
-        </div>
-    `; 
+        PRODUCTS.forEach(({id}) => {
 
-    ROOT_PRODUCTS.innerHTML = html;
+        buttonPrice.forEach((item) => {
+            item.addEventListener('onclick', function(){   // нажатие на акнопку 
+                productPage.handleSetLocationStorage(this, id)
+            })
+        });
+
+           // <button onclick="productPage.handleSetLocationStorage(this, '${id}')">${price}</button>
+
+    });
 
     }
 
 }
 
 const productPage = new Products();
+const buttonPrice = document.querySelectorAll('.price');
 productPage.render();

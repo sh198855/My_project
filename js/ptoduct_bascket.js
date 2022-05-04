@@ -1,3 +1,5 @@
+//методы для вставки и вытаскивания данных в localstorage
+
 class Bascket_localstorage {
     constructor(){
         this.keyName = 'products'
@@ -13,15 +15,7 @@ class Bascket_localstorage {
 
     putProducts(id){
         let products = this.getProducts();
-        const index = products.indexOf(id);
-        if (index === -1){
-            products.push(id)
-        } else {
-            //+ количество товара
-            //+ сумма товаров
-            products.push(id)
-        }
-
+        products.push(id)
         localStorage.setItem(this.keyName, JSON.stringify(id));
         return{ products }
     }
