@@ -7,14 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/menu.css">
 </head>
 <body>
-    <header>
+    <header class="hide_header">
         <div class="block_head block_first">
             <div class="container first_block_items">
                 <div class="block_items">
                     <div class="image_items">
-                        <img src="images/menu.png" alt="Меню" class="img_log">
+                        <button class="menu_btn"><img src="images/menu.png" alt="Меню" class="img_log"></button>
                         <img src="images/Frame_log.png" alt="Логотип" class="img_fr_log">
                         <img src="images/logo.png" alt="Логотип" class="img_log hide">
                     </div>
@@ -63,7 +64,7 @@
         </div>
 </header>
 
-<main>
+<main class="hide_main">
     <nav class="nav_block_therd">
         <div class="therd_nav_elements container">
             <div class="therd_nav_element"><img src="images/2_1.png" class="nav_item_image"></div>
@@ -1112,7 +1113,7 @@
     </section>
   
 </main> 
-<footer>
+<footer class="hide_footer">
     <div class="block_footer">
         <div class="block_footer_items">
             <div class="footer_links">
@@ -1155,9 +1156,83 @@
             <img src="images/sunweb.svg" alt="Логотоп компании">
         </div>
     </div>
-
 </footer>
 
+
+<div class="display_menu">
+    <div class="mn_block_head mn_block_first">
+        <div class="mn_container mn_first_block_items">
+            <div class="mn_block_items">
+                <div class="mn_image_items">
+                    <button class="btn_close_menu"><img src="images/close.svg" alt="Закрыть меню"></button>
+                    <img src="images/black_logo.svg" alt="Логотип" class="mn_img_fr_log">
+                    <img src="images/mn_logo.svg" alt="Логотип" class="mn_img_log">
+                </div>
+                <a class="mn_phone" href="tel:+78127171919">+7 812 717-19-19</a>
+                <div class="mn_image_items">
+                    <img src="images/mn_location.svg" alt="Адрес" class="mn_img_log">
+                    <p class="mn_left_block_adress">Укажите адрес</p>
+                </div>
+            </div>
+            <div class="mn_block_items_right">
+                <div class="mn_image_items">
+                    <img src="images/mn_logo_rt.svg" alt="Логотип" class="mn_img_log">
+                    <p class="mn_right_shiming">Шиминги</p>  
+                </div>
+                <div class="mn_image_items">
+                    <img src="images/mn_bag.svg" alt="Корзина">
+                    <div class="mn_count_product">12</div>
+                    <p class="mn_price">2586₽</p>
+                </div>  
+            </div>
+        </div>
+    </div>    
+    <div class="menu">
+        <div class="left_side">
+            <span class="text_menu">меню</span>
+            <nav class="left_links_menu">
+                <div class="left_links_menu_text"><a href="#">Новинки</a></div>
+                <div class="left_links_menu_text"><a href="#">Роллы</a></div>
+                <div class="left_links_menu_text"><a href="#">Напитки</a></div>
+                <div class="left_links_menu_text"><a href="#">Десерты</a></div>
+                <div class="left_links_menu_text"><a href="#">Закуски</a></div>
+                <div class="left_links_menu_text"><a href="#">Наборы</a></div>
+                <div class="left_links_menu_text"><a href="#">Поке и боулы</a></div>
+                <div class="left_links_menu_text"><a href="#">Воки</a></div>
+                <div class="left_links_menu_text"><a href="#">Авторское</a></div>
+                <div class="left_links_menu_text"><a href="#">Онигири</a></div>
+                <div class="left_links_menu_text"><a href="#">Топпинги</a></div>  
+            </nav>
+        </div>
+        
+        <div class="right_side">
+            <div class="right_side_items">
+                <div class="right_links_text">
+                    <div class="right_links_text_decor"><a href="#">вход</a></div>
+                    <div class="right_links_text_decor"><a href="#">доставка</a></div>
+                    <div class="right_links_text_decor"><a href="#">акции</a></div>
+                    <div class="right_links_text_decor"><a href="#">отзывы</a></div>
+                    <div class="right_links_text_decor"><a href="#">связаться с нами</a></div>
+                    <div class="right_links_text_decor"><a href="#">о нас</a></div>
+                    <div class="right_links_text_decor"><a href="#">вакансии</a></div>
+                </div>
+                <hr class="line_style">
+                <div class="right_logo_apps">
+                    
+                    <div class="logo"><img src="images/logo-footer.svg" alt="Логотип"></div>
+                    <div class="apps">
+                        <img src="images/Instagram.svg" alt="Instagram">
+                        <img src="images/WhatsApp.svg" alt="WhatsApp">
+                        <img src="images/Telegram.svg" alt="Telegram">
+                        <img src="images/VK_.svg" alt="VK">
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>    
+</div>
+
+<script type="text/javascript" src="./js/menu.js"></script>
 <script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="./js/catalog.js"></script>
 <script type="text/javascript" src="./js/count_bascket.js"></script>

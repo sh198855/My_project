@@ -117,6 +117,11 @@ header{
   height: 100%;
   align-items: center;
 }
+.menu_btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
 .image_items{
   display: flex;
@@ -196,6 +201,7 @@ header{
 .block_items{
   display: flex;
   gap: 24px;
+  align-items: center;
 }
 
 .block_items_right{
