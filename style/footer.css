@@ -57,6 +57,10 @@ footer{
 .logo_f{
     margin-bottom: 32px;
 }
+.footer_logo{
+    display: none;
+    margin-bottom: 32px;
+}
 
 .footer_apps{
     display: flex;
@@ -140,6 +144,12 @@ footer{
         align-items:flex-end;
         margin-right: 16px;
         margin-top: 23px;
+    }
+    .footer_logo{
+        display: flex;
+    }
+    .logo_f{
+        display: none;
     }
 
 }
