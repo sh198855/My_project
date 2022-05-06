@@ -16,7 +16,7 @@
 
 .mn_container {
     width: 1400px;
-    margin: 0 auto;
+    margin-left: 58px
 }
 
 .mn_first_block_items{
@@ -45,9 +45,11 @@
 
 .mn_img_fr_log{
     display: none;
+    margin-left: 30px;
+
 }
 .mn_hide{
-    display: none;
+    display: flex;
 }
 
 .mn_phone{
@@ -58,6 +60,7 @@
     font-size: 14px;
     color: #A0A0A0;
     text-decoration: none;
+    margin-left: 24px;
 }
 
 .mn_left_block_adress{
@@ -119,7 +122,6 @@
 /*________________HEAD_END____________*/
 .menu{
     display: flex;
-    width: 100%;
     height: 859px;
 }
 
@@ -174,6 +176,8 @@
 }
 
 .right_side_items{
+    display: flex;
+    flex-direction: column;
     margin-left: 228px;
     margin-top: 64px;
     width: 400px;
@@ -201,6 +205,7 @@
 
 .line_style{
     border: 1px solid #FFBDC8;
+    width: 400px;
 }
 
 .right_logo_apps{
@@ -223,7 +228,58 @@
     background: none;
     border: none;
     cursor: pointer;
+    min-width: 12px;
 }
+
+/* start block viwe shopping bag */
+
+.mn_block_for_phone_version{
+    display: none;
+    position: fixed;
+    justify-content: space-between;
+    bottom: 38px;
+    width: 396px;
+    border-radius: 50px 50px 50px 50px;
+    border: 1px solid #FFBDC8;
+    background-color: #FFBDC8;
+    padding: 17px;
+    margin-left: 16px;
+    margin-right: 16px;
+    z-index: 100;
+}
+
+
+.mn_bascket{
+    display: flex;
+}
+
+.mn_count_product{
+    border-radius: 50%;
+    min-width: 18px;
+    height: 18px;
+    padding-top: 2.5px;
+    padding-left: 2.5px;
+    background: #B20D30;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+.mn_price{
+    font-family: 'Value Sans Pro';
+    margin-left: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #274646;
+}
+/* end block viwe shopping bag */
+
+/*for js*/
 .menu_enable{
     display: flex;
     flex-direction: column;
@@ -231,4 +287,74 @@
 
 .menu_disable{
     display: none;
+}
+/*end for js*/
+
+/*//////////////////////////////////////////MEDIA REQUEST//////////////////////////////*/
+
+@media (max-width: 576px) {
+    .mn_container {
+      width: 100%;
+    }
+    .mn_hide{
+        display: none;
+    }
+    .mn_img_fr_log{
+        display: flex;
+    }
+    .mn_block_items_right{
+        display: none;
+    }
+    .mn_block_items{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .mn_block_for_phone_version{
+        display: flex;
+    }
+
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .mn_container {
+      width: 540px;
+    }
+    .mn_hide{
+        display: none;
+    }
+    .mn_img_fr_log{
+        display: flex;
+    }
+    .mn_block_items_right{
+        display: none;
+    }
+    .mn_block_items{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 769px) and  (max-width: 992px) {
+    .mn_container {
+      width: 720px;
+    }
+}
+
+@media (min-width: 993px) and  (max-width: 1200px) {
+    .mn_container {
+      width: 960px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width:1400px) {
+    .mn_container {
+      width: 1140px;
+    }
+}
+
+@media (min-width:1401px) {
+    .mn_container {
+      width: 1320px;
+    }
 }
