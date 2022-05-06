@@ -283,8 +283,6 @@ header{
     padding: 8px 0px;
     align-items: stretch;
     gap: 20px;
-    overflow-x: auto;
-    white-space: nowrap;
 }
 
 /*////////////////////////////////END_OF_HEADER///////////////////////////////*/
@@ -427,7 +425,7 @@ header{
 }
 /*______END_TAPE______*/
 
-.Section{
+.section{
   margin-top: 64px;
 }
 
@@ -603,7 +601,7 @@ header{
   }
 
   /*---main---*/
-  .Section{
+  .section{
     margin-left: 16.14px;
   }
 
@@ -712,8 +710,6 @@ header{
     grid-template-columns: repeat(2, 6fr);
   }
   .card_of_section{
-    max-width: none;
-    grid-template-rows: 200px auto;
     padding: 10px;
   }
   /*---end_main---*/
@@ -739,11 +735,9 @@ header{
     gap: 32px 26px;
   }
   .card_of_section{
-    max-width: none;
-    grid-template-rows: 200px auto;
     padding: 10px;
   }
-  .Section{
+  .section{
     margin: 0 5.5px;
   }
   .section_name{
@@ -762,11 +756,7 @@ header{
     gap: 48px;
   }
   /*---main---*/
-  .cards_of_section{
-    grid-template-columns: repeat(4, 3fr);
-  }
   .card_of_section{
-    grid-template-rows: 200px auto;
     padding: 10px;
   }
   .imgs_of_section{
@@ -785,7 +775,6 @@ header{
     margin-left: none;
   }
   .card_of_section{
-    grid-template-rows: 200px auto;
     padding: 10px;
   }
   .imgs_of_section{

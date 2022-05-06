@@ -1,6 +1,9 @@
 .display_menu{
     display: none;
+    height: auto;
 }
+
+/*________________HEAD_START____________*/
 .mn_block_head{
     display: flex;
     width: 100%;
@@ -120,9 +123,46 @@
 
 
 /*________________HEAD_END____________*/
+
+
+
+/*______________MOBILE_MENU_START___________*/
+
+.mobile_menu{
+    display: none;
+    background-color: #FFFFFF;
+    width: 47px;
+}
+.mobile_items{
+    display: flex;
+    flex-direction: column;
+    margin: 38px 0 0 12px;
+
+}
+
+.mobile_menu_text{
+    margin-top: 16px;
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #274646;
+    writing-mode:vertical-lr;
+}
+
+
+.green_vetor{
+    display: flex;
+}
+.pinck_vetor{
+    display: none;
+}
+
+/*______________MOBILE_MENU_END___________*/
+
 .menu{
     display: flex;
-    height: 859px;
 }
 
 .left_side{
@@ -131,6 +171,10 @@
     width: 272px;
     background-color: white;
     margin: 64px 0 0 51px;
+}
+
+.hide_block_menu{
+    display: flex;
 }
 
 .text_menu{
@@ -172,13 +216,13 @@
     flex-direction: column;
     background-color: #274646;
     width: 100%;
-    
+    align-items: center;
 }
 
 .right_side_items{
     display: flex;
     flex-direction: column;
-    margin-left: 228px;
+    align-items: center;
     margin-top: 64px;
     width: 400px;
 }
@@ -228,7 +272,6 @@
     background: none;
     border: none;
     cursor: pointer;
-    min-width: 12px;
 }
 
 /* start block viwe shopping bag */
@@ -296,6 +339,10 @@
     .mn_container {
       width: 100%;
     }
+    /*___HEAD___*/
+    .mn_first_block_items{
+        margin-left: 22px;
+    }
     .mn_hide{
         display: none;
     }
@@ -309,9 +356,27 @@
         width: 100%;
         justify-content: space-between;
     }
+    /*_____END_HEAD____*/
+
+    
     .mn_block_for_phone_version{
         display: flex;
     }
+    button{
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /*start mobile menu*/
+    .mobile_menu{
+        display: flex;
+    }
+
+    .hide_block_menu{
+        display: none;
+    }
+    /*end mobile menu*/
 
 }
 
@@ -319,6 +384,9 @@
 @media (min-width: 577px) and (max-width: 768px) {
     .mn_container {
       width: 540px;
+    }
+    .mn_first_block_items{
+        margin-left: 22px;
     }
     .mn_hide{
         display: none;

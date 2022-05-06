@@ -104,7 +104,7 @@
 
     <!-- Section of rols -->
     <section class="container">
-        <section class="Section">
+        <section class="section">
             <h1 class = "section_name">классические</h1>
             <div class="cards_of_section">
                 <div class="card_of_section">
@@ -269,7 +269,7 @@
                 </div>
             </div>
         </section>
-        <section class="Section">
+        <section class="section">
             <h1 class = "section_name">опаленные</h1>
             <div class="cards_of_section">
                 <div class="card_of_section">
@@ -445,7 +445,7 @@
     </div>
     <!-- Section of sushi -->
     <section class="container">
-        <section class="Section">
+        <section class="section">
             <h1 class = "section_name">классические</h1>
             <div class="cards_of_section">
                 <div class="card_of_section">
@@ -610,7 +610,7 @@
                 </div>
             </div>
         </section>
-        <section class="Section">
+        <section class="section">
             <h1 class = "section_name">опаленные</h1>
             <div class="cards_of_section">
                 <div class="card_of_section">
@@ -785,7 +785,7 @@
     </div>
     <!-- Section of poke -->
     <section class="container">
-        <section class="Section">
+        <section class="section">
             <h1 class = "section_name">классические</h1>
             <div class="cards_of_section">
                 <div class="card_of_section">
@@ -950,7 +950,7 @@
                 </div>
             </div>
         </section>
-        <section class="Section">
+        <section class="section">
             <h1 class = "section_name">опаленные</h1>
             <div class="cards_of_section">
                 <div class="card_of_section">
@@ -1144,9 +1144,9 @@
     </div>
     <div class="footer_bottom">
         <div class="bottom_left">
-            <span>Шимийо © 2022</span>
-            <a href="#">Политика конфиденциальности</a>
-            <a href="#">Пользовательское соглашение</a>
+            <div><span>Шимийо © 2022</span></div>
+            <div><a href="#">Политика конфиденциальности</a></div>
+            <div><a href="#">Пользовательское соглашение</a></div>
         </div>
         
         <div class="bottom_right">
@@ -1193,9 +1193,20 @@
                 </div>  
             </div>
         </div>
-    </div>    
+    </div>  
+
     <div class="menu">
-        <div class="left_side">
+        <!--start mobile menu--->
+        <div class="mobile_menu">
+            <div class="mobile_items">
+                <button class="green_vetor"><img src="images/Vector_green.svg" alt="Стрелка"></button>
+                <button class="pinck_vetor"><img src="images/Vector_pinck.svg" alt="Стрелка"></button>
+                <span class="mobile_menu_text">меню</span>
+            </div>
+        </div>
+        <!--end mobile menu--->
+
+        <div class="left_side hide_block_menu">
             <span class="text_menu">меню</span>
             <nav class="left_links_menu">
                 <div class="left_links_menu_text"><a href="#">Новинки</a></div>
@@ -1211,7 +1222,6 @@
                 <div class="left_links_menu_text"><a href="#">Топпинги</a></div>  
             </nav>
         </div>
-        
         <div class="right_side">
             <div class="right_side_items">
                 <div class="right_links_text">
@@ -1243,16 +1253,13 @@
             <div><img src="images/mn_bag.svg" alt="Корзина"></div>
             <div class="mn_count_product">12</div>
             <p class="mn_price">Корзина</p>
-        </div>
+        </div> 
         <div>
             <p class="mn_price">2586₽</p>
         </div>
     </div>
-</div>
-
-<!--------------------------------------------------------END MENU------------------------------------------------------->
-
 <script type="text/javascript" src="./js/menu.js"></script>
+<script type="text/javascript" src="./js/menu_phone.js"></script>
 <script type="text/javascript" src="./js/script.js"></script>
 <script type="text/javascript" src="./js/catalog.js"></script>
 <script type="text/javascript" src="./js/count_bascket.js"></script>
