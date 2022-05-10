@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-chrome",
+            "type": "pwa-msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "/home/shukrona/projects/My_project/index.html"
+            "file": "c:\\Users\\user\\dev\\first\\index.html"
         }
     ]
 }

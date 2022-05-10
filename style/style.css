@@ -279,6 +279,7 @@ header{
 
 .nav_border_second{
     display: flex;
+    overflow: hidden;
     justify-content: start;
     padding: 8px 0px;
     align-items: stretch;
@@ -553,7 +554,6 @@ header{
   bottom: 10px;
   width: 396px;
   border-radius: 50px 50px 50px 50px;
-  border: 1px solid;
   height: 50px;
   background-color: #274646;
   padding: 17px;

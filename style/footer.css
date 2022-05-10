@@ -48,16 +48,21 @@ footer{
     align-items: center;
 }
 
-.footer_line{
+.bl_footer_line{
+    display: flex;
     width: 400px;
-    outline: 1px solid #FFBDC8;
     margin-bottom: 32px;
+}
+.footer_line{
+    display: flex;
+    width: 100%;
+    outline: 1px solid #FFBDC8;
 }
 
 .logo_f{
     margin-bottom: 32px;
 }
-.footer_logo{
+.second_logo{
     display: none;
     margin-bottom: 32px;
 }
@@ -145,7 +150,7 @@ footer{
         margin-right: 16px;
         margin-top: 23px;
     }
-    .footer_logo{
+    .second_logo{
         display: flex;
     }
     .logo_f{
