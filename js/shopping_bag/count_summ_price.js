@@ -1,4 +1,4 @@
-//счёт сумма товаров и вывод его в '.price'
+//счёт суммы товаров и вывод его в '.price'
 
 class Shoppping{
 
@@ -20,4 +20,5 @@ class Shoppping{
 
 //shoud be realized a list of products
 
-const soppingPage = new Shoppping();
+const shoppingPage = new Shoppping();
+shoppingPage.render();

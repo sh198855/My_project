@@ -80,9 +80,11 @@ select {
 /*////////////////////////////////HEADER///////////////////////////////*/
 
 header{
-    width: 100%;
-    border-top: 0px solid #aaaaaa;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-top: 0px solid #aaaaaa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .head_shadow{
@@ -153,18 +155,19 @@ header{
 }
 
 .count_product{
-  border-radius: 50%;
-  min-width: 18px;
-  height: 18px;
-  padding-top: 2.5px;
-  padding-left: 2.5px;
-  background: #B20D30;
-  font-family: 'Value Sans Pro';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 12px;
-  line-height: 12px;
-  color: #FFFFFF;
+    display: flex;
+    padding: 0 3px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    background-color: #B20D30;
+    border-radius: 10px;
+    min-width: 18px;
+    height: 18px;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -176,6 +179,15 @@ header{
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
+}
+.text_basket{
+  font-family: 'Value Sans Pro';
+  margin-left: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
 /* for changing display in madia_content */
@@ -296,7 +308,7 @@ header{
   width: auto;
 }
 .nav_block_therd{
-  padding-top: 20px;
+  padding-top: 182px;
 }
 
 .therd_nav_elements{

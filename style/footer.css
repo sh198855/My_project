@@ -53,7 +53,6 @@ footer{
     margin-bottom: 32px;
 }
 .footer_line{
-    display: flex;
     width: 100%;
     outline: 1px solid #FFBDC8;
 }

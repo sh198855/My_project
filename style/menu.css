@@ -299,18 +299,19 @@
 }
 
 .mn_count_product{
-    border-radius: 50%;
-    min-width: 18px;
-    height: 18px;
-    padding-top: 2.5px;
-    padding-left: 2.5px;
-    background: #B20D30;
-    font-family: 'Value Sans Pro';
+    display: flex;
+    padding: 0 3px;
     font-style: normal;
     font-weight: 900;
     font-size: 12px;
     line-height: 12px;
     color: #FFFFFF;
+    background-color: #B20D30;
+    border-radius: 10px;
+    min-width: 18px;
+    height: 18px;
+    align-items: center;
+    justify-content: center;
 }
 
 .mn_price{

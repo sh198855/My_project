@@ -3,9 +3,7 @@
 
 class Counter{
     render(count){
-
         document.querySelector('.count_product').innerHTML = count;
-
     }
 }
 
