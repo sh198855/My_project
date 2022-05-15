@@ -1,25 +1,42 @@
 //добавить элемент в localstorage при нажатии на кнопку
 
-class Products{
-    
-    handleSetLocalStorage(id){
-        const {products} =  bascket_localstorage.putProducts(id); // вызываем метод из Bascket_localstorage
+export default class ProductsAdd{  
+    /*handleSetLocalStorage(id, putMethod){
+        const {products} = putMethod(id); //bascket_localstorage.putProducts(id); // вызываем метод из Bascket_localstorage
         counterPage.render(products.length); // для вывода счёта количество товаров сразу после нажатия на кнопку
     }
 
-    render(){
-        PRODUCTS.forEach(({id}) => {
+    render(putMethod){
+        products.forEach(({id}) => {
             buttonPrice.forEach(item => {
                 item.addEventListener('click', function(){   // нажатие на акнопку 
-                    productPage.handleSetLocalStorage(this, id);
+                    putMethod(this, id);
+                    //productPage.handleSetLocalStorage(this, id);
                 })
             });
-    });
+    }); */
 
+    constructor(){
+        this.products = [];
     }
 
+    add_product(productId){
+        let existProduct = this.products.find(item => item.id == productId);
+        if(!existProduct){
+            this.products.push({
+                id: productId,
+                quantity: 1
+            })}else{
+                existProduct.quantity++;
+            }
+        }
+
+    product_array(){
+        return this.products;
+    }
 }
 
-const productPage = new Products();
-const buttonPrice = document.querySelectorAll('.inform_newprice');
-productPage.render();
+
+//const productPage = new ProductsAdd();
+//const buttonPrice = document.querySelectorAll('.inform_newprice');
+//productPage.render();

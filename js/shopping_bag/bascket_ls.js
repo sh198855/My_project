@@ -1,6 +1,7 @@
 //методы для вставки и вытаскивания данных в localstorage
 
-class Bascket_localstorage {
+export default class Bascket_localstorage {
+    /*
     constructor(){
         this.keyName = 'products'
     }
@@ -18,7 +19,7 @@ class Bascket_localstorage {
         products.push(id)
         localStorage.setItem(this.keyName, JSON.stringify(id));
         return{ products }
-    }
+    }*/
 }
 
-const bascket_localstorage = new Bascket_localstorage();
+//const bascket_localstorage = new Bascket_localstorage();
