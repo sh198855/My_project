@@ -133,7 +133,13 @@ header{
 
 .img_log{
   display: flex;
+  margin-right: 18px;
+}
+.img_log_r{
   margin-right: 8px;
+}
+.location_img{
+  margin-right: 8.53px;
 }
 
 .right_shiming{
@@ -257,8 +263,12 @@ header{
     border-bottom: 3px solid #274646;
 }
 
+.buttons_hide{
+  display: none;
+}
+
 .block_second_nav{
-  display: flex;
+  display: flex; /*_____________________________________*/
   background-color: #FFFFFF;
   height: 52px;
 }
@@ -610,7 +620,13 @@ header{
   }
   .nav_border{
     gap: 48px;
+    margin-left: 16px;
   }
+
+  .nav_border_second {
+    margin-left: 16px;
+  }
+
 
   /*---main---*/
   .section{

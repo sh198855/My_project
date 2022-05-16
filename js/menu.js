@@ -3,6 +3,21 @@ var main = document.querySelector('.hide_main');
 var footer = document.querySelector('.hide_footer')
 var menu = document.querySelector('.display_menu');
 
+var buttons = document.querySelector('.buttons_hide')
+
+function showbattuns(){
+    let elements = document.querySelectorAll('.nav_element');
+    elements.forEach((element)=>{
+        element.addEventListener('mouseover', function(e){
+            //document.getElementById('buttn').style.display = 'flex';
+            buttons.classList.toggle('buttons_hide');
+        })
+        element.addEventListener('mouseout', function(e){
+            //document.getElementById('buttn').style.display = 'none';
+            buttons.classList.toggle('buttons_hide');
+        })
+    })
+}
 
 function showMenu(){
     let buttn = document.querySelector('.menu_btn')
@@ -25,3 +40,4 @@ function closeMenu(){
 }
 showMenu();
 closeMenu();
+showbattuns();
