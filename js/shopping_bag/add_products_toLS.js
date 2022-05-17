@@ -20,6 +20,10 @@ export default class ProductsAdd{
         this.products = [];
     }
 
+    get product_array(){
+        return this.products;
+    }
+
     add_product(productId){
         let existProduct = this.products.find(item => item.id == productId);
         if(!existProduct){
@@ -31,9 +35,6 @@ export default class ProductsAdd{
             }
         }
 
-    product_array(){
-        return this.products;
-    }
 }
 
 

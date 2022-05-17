@@ -2,9 +2,15 @@
 
 
 export default class Counter{
+    constructor(){
+        this.product_array = []
+    }
+    set pushProduct(value){
+        this.product_array = value;
+    }
 
-    render(product_array){
-        document.querySelector('.count_product').innerHTML = product_array.length;
+    render(){
+        document.querySelector('.count_product').innerHTML = this.product_array.length;
     }
 
     /*

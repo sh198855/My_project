@@ -10,14 +10,17 @@ const ct_summ = new summ();
 const add_prod = new add_products();
 
 
-ct_quantity.render(add_prod.product_array);
+ct_quantity.pushProduct(add_prod.product_array);
+ct_quantity.render();
 
-ct_summ.render(add_prod.product_array);
+ct_summ.pushProducts(add_prod.product_array);
+ct_summ.render();
 
 
-let AddButton = document.querySelectorAll('.inform_newprice').forEach(item =>{
+let Button_click = document.querySelectorAll('.inform_newprice');
+Button_click.forEach(item =>{
     item.addEventListener('click', function(e){
-        add_products.add_product(e.target.getAttribute('product'))
+        add_prod.add_product(e.target.getAttribute('product'))
     })
 })
 

@@ -1,4 +1,4 @@
-(function(){
+( function(){
     let speed = 2;
 
     let scrolls = document.querySelector('.therd_nav_elements');

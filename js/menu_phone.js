@@ -22,6 +22,5 @@ function close_mn(){
 
     });
 }
-
 open_mn();
 close_mn();
