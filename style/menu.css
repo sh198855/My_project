@@ -10,11 +10,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: #FFFFFF; /*changed*/
     height: 52px;
+    justify-content: center;
 }
 
 .mn_container {
     width: 1400px;
-    margin-left: 58px
 }
 
 .mn_first_block_items{
