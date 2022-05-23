@@ -447,6 +447,28 @@ header{
 }
 
 
+/*_____start_shopping_bag_list_______*/
+
+.basket_items{
+  display: none;
+  flex-direction: column;
+}
+.basket_item{
+  display: flex;
+  position: absolute;
+  top: 54px;
+  left: 0px;
+  width: 200px;
+  min-height: 400px;
+  background-color: antiquewhite;
+  border: 2px solid #274646;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+
+
+/*_____end_shopping_bag_list_______**/
+
 .product_title{
   display: flex;
   margin: 0;

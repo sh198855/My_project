@@ -11,7 +11,6 @@ class Basket {
 
     getProductsOfLocalStorage() {
         if (localStorage.getItem('products')) this.products = JSON.parse(localStorage.getItem('products'));
-        console.log(this.products);
     }
 
     addProductToBasket(id) {
@@ -33,7 +32,6 @@ class Basket {
     calculate() {
         this.summ = 0;
         this.quantity = 0;
-        console.log(this.products.length);
         if (this.products.length > 0) {
            
             this.products.forEach(element => {
@@ -57,9 +55,42 @@ class Basket {
         }
     }
 
-/*     removeProductToBasket(id) {
+    render_show_basket(){
+        let show_shopping_bag = document.querySelector('.basket_items');
+        show_shopping_bag.innerHTML = '';
+        if(this.products.length>0){
+            this.products.forEach(product => {
+                let product_from_list = this.products.find(item => item.id == product.id);
+                if(product_from_list){
+                    show_shopping_bag.innerHTML += `
+                    <div class = "basket_items">
+                        <div class = "basket_item">
+                            <span>${product_from_list.title}</span>
+                            <span>${product_from_list.price}</span>
+                            <span class="rmv_product" id_product = ${product_from_list.id}>удалить</span>
+                        </div>
+                    </div>
+                `;
+                }
 
-    } */
+            })}
+        let removeProduct = document.querySelectorAll('.rmv_product');
+        removeProduct.forEach(product => {
+            product.addEventListener('click', function(e) {
+                basket.removeProductFromBasket(e.target.id);
+            })
+        })
+    }
+
+    removeProductFromBasket(id) {
+        let product = this.products.find(item => item.id == id); 
+        if(product){
+            localStorage.removeItem(id);
+            this.calculate();
+            this.render();
+        }
+
+    } 
 
 }
 
@@ -73,3 +104,4 @@ if (addProduct && addProduct.length > 0) {
         })
     })
 }
+
