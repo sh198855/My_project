@@ -1,27 +1,76 @@
-//import basket_loc_st from './bascket_ls.js';
-import {products} from './catalog.js';
-import quantity from './count_quantity.js';
-import summ from './count_summ_price.js';
-import add_products from './add_products_toLS.js';
 
-//const bascket_ = new basket_loc_st();
-const ct_quantity = new quantity();
-const ct_summ = new summ();
-const add_prod = new add_products();
+class Basket {
 
+    constructor() {
+        this.products = [];
+        this.summ = 0;
+        this.quantity = 0;
+        this.getProductsOfLocalStorage();
+        this.calculate();
+        this.render();
+    }
 
-ct_quantity.pushProduct(add_prod.product_array);
-ct_quantity.render();
+    getProductsOfLocalStorage() {
+        if (localStorage.getItem('products')) this.products = JSON.parse(localStorage.getItem('products'));
+        console.log(this.products);
+    }
 
-ct_summ.pushProducts(add_prod.product_array);
-ct_summ.render();
+    addProductToBasket(id) {
+        let product = catalog.find(item => item.id == id);
+        
+        if (product) {
+            let productInBasket = this.products.find(item => item.id == id);
+            if (productInBasket) {
+                productInBasket.quantity++;
+            } else {
+                this.products.push({id: product.id, quantity: 1})
+            }
+        }
+        localStorage.setItem('products', JSON.stringify(this.products));
+        this.calculate();
+        this.render();
+    }
 
+    calculate() {
+        this.summ = 0;
+        this.quantity = 0;
+        console.log(this.products.length);
+        if (this.products.length > 0) {
+           
+            this.products.forEach(element => {
+                let product = catalog.find(product => product.id == element.id)
+                if (product) {
+                    this.summ += product.price * element.quantity;
+                    this.quantity += element.quantity;
+                }
+            });
+        }   
+    }
 
-let Button_click = document.querySelectorAll('.inform_newprice');
-Button_click.forEach(item =>{
-    item.addEventListener('click', function(e){
-        add_prod.add_product(e.target.getAttribute('product'))
+    render() {
+        let quantity = document.querySelector('.count_product');
+        if (quantity) {
+            quantity.innerHTML = this.quantity;
+        }
+        let summ = document.querySelector('.price');
+        if (quantity) {
+            summ.innerHTML = this.summ;
+        }
+    }
+
+/*     removeProductToBasket(id) {
+
+    } */
+
+}
+
+let basket = new Basket();
+
+let addProduct = document.querySelectorAll('.inform_newprice');
+if (addProduct && addProduct.length > 0) {
+    addProduct.forEach(product => {
+        product.addEventListener('click', function (e) {
+            basket.addProductToBasket(e.target.id);
+        })
     })
-})
-
-
+}

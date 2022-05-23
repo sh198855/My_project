@@ -22,5 +22,5 @@ function close_mn(){
 
     });
 }
-open_mn();
-close_mn();
+
+export {open_mn, close_mn};

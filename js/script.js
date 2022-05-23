@@ -1,4 +1,4 @@
-( function(){
+function scroll_card(){
     let speed = 2;
 
     let scrolls = document.querySelector('.therd_nav_elements');
@@ -23,7 +23,7 @@
     scroll_item.forEach((item)=>{
         item.addEventListener('mousedown', function(e){
             e.preventDefault();})
-    })
-    
-}());
+    })   
+}
+export {scroll_card};
 
