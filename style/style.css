@@ -186,6 +186,16 @@ header{
     line-height: 16px;
     color: #FFFFFF;
 }
+.rub{
+  font-family: 'Value Sans Pro';
+  margin-left: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
 .text_basket{
   font-family: 'Value Sans Pro';
   margin-left: 8px;
@@ -295,8 +305,7 @@ header{
 .second_nav_element a:hover{
     color: #274646;
     border-radius: 30px;
-    background: #E9E6E6
-    
+    background: #E9E6E6   
 }
 
 .nav_border_second{
@@ -462,7 +471,19 @@ header{
   margin-bottom: 31px;
 }
 
-.cards_of_section{
+.cards_of_rolls_section{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 3fr);
+}
+
+.cards_of_sushi_section{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 3fr);
+}
+
+.cards_of_poke_section{
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(4, 3fr);
@@ -559,6 +580,8 @@ header{
   color: #274646;
   background: #E9E6E6;
   border-radius: 46px;
+  border: 0px;
+  border-color: #E9E6E6;
   padding: 10px 23.5px;
   text-decoration: none;
 }
@@ -633,11 +656,20 @@ header{
     margin-left: 16.14px;
   }
 
-  .cards_of_section{
+  .cards_of_rolls_section{
     grid-template-columns: repeat(1, 12fr);
     gap: 5px;
   }
 
+  .cards_of_sushi_section{
+    grid-template-columns: repeat(1, 12fr);
+    gap: 5px;
+  }
+
+  .cards_of_poke_section{
+    grid-template-columns: repeat(1, 12fr);
+    gap: 5px;
+  }
   .title_block{
     margin: 36px, 0, 64, 0;
     height: 80px;
@@ -734,7 +766,13 @@ header{
   }
 
   /*---main---*/
-  .cards_of_section{
+  .cards_of_rolls_section{
+    grid-template-columns: repeat(2, 6fr);
+  }
+  .cards_of_sushi_section{
+    grid-template-columns: repeat(2, 6fr);
+  }
+  .cards_of_poke_section{
     grid-template-columns: repeat(2, 6fr);
   }
   .card_of_section{
@@ -759,7 +797,13 @@ header{
   } 
 
   /*---main---*/
-  .cards_of_section{
+  .cards_of_rolls_section{
+    gap: 32px 26px;
+  }
+  .cards_of_sushi_section{
+    gap: 32px 26px;
+  }
+  .cards_of_poke_section{
     gap: 32px 26px;
   }
   .card_of_section{
@@ -799,7 +843,13 @@ header{
     width: 1140px;
   }
   /*---main---*/
-  .cards_of_section{
+  .cards_of_rolls_section{
+    margin-left: none;
+  }
+  .cards_of_sushi_section{
+    margin-left: none;
+  }
+  .cards_of_poke_section{
     margin-left: none;
   }
   .card_of_section{

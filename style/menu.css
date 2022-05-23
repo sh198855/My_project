@@ -22,6 +22,7 @@
     justify-content: space-between;
     height: 100%;
     align-items: center;
+    
 }
 
 .mn_block_items{
@@ -38,7 +39,6 @@
 
 .mn_img_log{
     display: flex;
-    margin-left: 20px;
 }
 
 .location_log{
@@ -52,6 +52,7 @@
 }
 .mn_hide{
     display: flex;
+    margin-left: 14px;
 }
 
 .mn_phone{
@@ -407,9 +408,6 @@
 @media (min-width: 577px) and (max-width: 768px) {
     .mn_container {
       width: 540px;
-    }
-    .mn_first_block_items{
-        margin-left: 22px;
     }
     .mn_hide{
         display: none;

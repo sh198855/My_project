@@ -5,7 +5,7 @@ var menu = document.querySelector('.display_menu');
 
 var buttons = document.querySelector('.buttons_hide')
 
-function showbattuns(){
+function showbuttons(){
     let elements = document.querySelectorAll('.nav_element');
     elements.forEach((element)=>{
         element.addEventListener('mouseover', function(e){
@@ -38,6 +38,5 @@ function closeMenu(){
         menu.classList.toggle('menu_enable');
     });
 }
-showMenu();
-closeMenu();
-showbattuns();
+
+export {showbuttons, showMenu, closeMenu};
