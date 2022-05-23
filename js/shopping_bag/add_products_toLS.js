@@ -1,21 +1,6 @@
 //добавить элемент в localstorage при нажатии на кнопку
 
 export default class ProductsAdd{  
-    /*handleSetLocalStorage(id, putMethod){
-        const {products} = putMethod(id); //bascket_localstorage.putProducts(id); // вызываем метод из Bascket_localstorage
-        counterPage.render(products.length); // для вывода счёта количество товаров сразу после нажатия на кнопку
-    }
-
-    render(putMethod){
-        products.forEach(({id}) => {
-            buttonPrice.forEach(item => {
-                item.addEventListener('click', function(){   // нажатие на акнопку 
-                    putMethod(this, id);
-                    //productPage.handleSetLocalStorage(this, id);
-                })
-            });
-    }); */
-
     constructor(){
         this.products = [];
     }
@@ -37,6 +22,21 @@ export default class ProductsAdd{
 
 }
 
+
+    /*handleSetLocalStorage(id, putMethod){
+        const {products} = putMethod(id); //bascket_localstorage.putProducts(id); // вызываем метод из Bascket_localstorage
+        counterPage.render(products.length); // для вывода счёта количество товаров сразу после нажатия на кнопку
+    }
+
+    render(putMethod){
+        products.forEach(({id}) => {
+            buttonPrice.forEach(item => {
+                item.addEventListener('click', function(){   // нажатие на акнопку 
+                    putMethod(this, id);
+                    //productPage.handleSetLocalStorage(this, id);
+                })
+            });
+    }); */
 
 //const productPage = new ProductsAdd();
 //const buttonPrice = document.querySelectorAll('.inform_newprice');

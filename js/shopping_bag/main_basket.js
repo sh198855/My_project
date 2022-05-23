@@ -1,5 +1,5 @@
-import {products} from './catalog.js';
 //import basket_loc_st from './bascket_ls.js';
+import {products} from './catalog.js';
 import quantity from './count_quantity.js';
 import summ from './count_summ_price.js';
 import add_products from './add_products_toLS.js';

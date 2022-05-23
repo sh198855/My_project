@@ -22,23 +22,24 @@ export default class Shoppping{
         })
         document.querySelector('.price').innerHTML = this.summ;
     }
-    /*
-    render(product_array){
-        const productStorage = product_array; //bascket_localstorage.getProducts();
-        let summ = 0;
-
-        products.forEach(({id, price}) => {
-            if (productStorage.indexOf(id) !==-1){
-                summ += price;
-            } else {
-                document.querySelector('.price').innerHTML = summ.toLocaleString();
-            }
-            document.querySelector('.price').innerHTML = summ.toLocaleString();
-        });
-
-    }*/
 }
 
+
+/*
+render(product_array){
+    const productStorage = product_array; //bascket_localstorage.getProducts();
+    let summ = 0;
+
+    products.forEach(({id, price}) => {
+        if (productStorage.indexOf(id) !==-1){
+            summ += price;
+        } else {
+            document.querySelector('.price').innerHTML = summ.toLocaleString();
+        }
+        document.querySelector('.price').innerHTML = summ.toLocaleString();
+    });
+
+}*/
 //shoud be realized a list of products
 
 
