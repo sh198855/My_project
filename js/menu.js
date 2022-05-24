@@ -5,6 +5,8 @@ var menu = document.querySelector('.display_menu');
 
 var buttons = document.querySelector('.buttons_hide')
 
+
+
 function showbuttons(){
     let elements = document.querySelectorAll('.nav_element');
     elements.forEach((element)=>{
@@ -20,7 +22,7 @@ function showbuttons(){
 }
 
 function showMenu(){
-    let buttn = document.querySelector('.menu_btn')
+    let buttn = document.querySelector('.menu_btn');
     buttn.addEventListener('click', function(e) {
         header.classList.toggle('menu_disable');
         main.classList.toggle('menu_disable');
@@ -30,7 +32,7 @@ function showMenu(){
 }
 
 function closeMenu(){
-    let buttn = document.querySelector('.btn_close_menu')
+    let buttn = document.querySelector('.btn_close_menu');
     buttn.addEventListener('click', function(e) {
         header.classList.toggle('menu_disable');
         main.classList.toggle('menu_disable');

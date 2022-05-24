@@ -56,14 +56,14 @@ class Basket {
     }
 
     render_show_basket(){
-        let show_shopping_bag = document.querySelector('.basket_items');
+        let show_shopping_bag = document.querySelector('.basket_show');
         show_shopping_bag.innerHTML = '';
         if(this.products.length>0){
             this.products.forEach(product => {
                 let product_from_list = this.products.find(item => item.id == product.id);
                 if(product_from_list){
                     show_shopping_bag.innerHTML += `
-                    <div class = "basket_items">
+                    <div class = "bascket_style">
                         <div class = "basket_item">
                             <span>${product_from_list.title}</span>
                             <span>${product_from_list.price}</span>
@@ -89,6 +89,7 @@ class Basket {
             this.calculate();
             this.render();
         }
+        this.render_show_basket();
 
     } 
 
@@ -105,3 +106,17 @@ if (addProduct && addProduct.length > 0) {
     })
 }
 
+let ButtnBag = document.querySelector('.count_product');
+let shopping_list = document.querySelector('.basket_show');
+
+ButtnBag.addEventListener('click', function(){
+    shopping_list.classList.toggle('basket_show');
+    basket.removeProductFromBasket();
+    let delete_element = document.querySelectorAll('.rmv_product');
+    delete_element.forEach(item =>{
+        item.addEventListener('click', function(e){
+            basket.removeProductFromBasket(e.target.getAttribute('id_product'));
+        })
+        
+    })
+})
