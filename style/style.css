@@ -473,6 +473,10 @@ header{
   padding: 10px;
 }
 
+.rmv_product{
+  cursor: pointer;
+}
+
 
 /*_____end_shopping_bag_list_______**/
 

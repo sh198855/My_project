@@ -108,15 +108,16 @@ if (addProduct && addProduct.length > 0) {
 
 let ButtnBag = document.querySelector('.count_product');
 let shopping_list = document.querySelector('.basket_show');
+basket.render_show_basket();
 
 ButtnBag.addEventListener('click', function(){
     shopping_list.classList.toggle('basket_show');
-    basket.removeProductFromBasket();
     let delete_element = document.querySelectorAll('.rmv_product');
     delete_element.forEach(item =>{
         item.addEventListener('click', function(e){
             basket.removeProductFromBasket(e.target.getAttribute('id_product'));
         })
-        
     })
+
+    
 })
