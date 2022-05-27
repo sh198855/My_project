@@ -7,6 +7,7 @@ class Basket {
         this.getProductsOfLocalStorage();
         this.calculate();
         this.render();
+        this.render_show_basket();
     }
 
     getProductsOfLocalStorage() {
@@ -27,6 +28,7 @@ class Basket {
         localStorage.setItem('products', JSON.stringify(this.products));
         this.calculate();
         this.render();
+        this.render_show_basket();
     }
 
     calculate() {
@@ -56,30 +58,22 @@ class Basket {
     }
 
     render_show_basket(){
-        let show_shopping_bag = document.querySelector('.basket_show');
+        let show_shopping_bag = document.querySelector('.bascket_style');
         show_shopping_bag.innerHTML = '';
         if(this.products.length>0){
             this.products.forEach(product => {
-                let product_from_list = this.products.find(item => item.id == product.id);
+                let product_from_list = catalog.find(item => item.id == product.id);
                 if(product_from_list){
                     show_shopping_bag.innerHTML += `
-                    <div class = "bascket_style">
-                        <div class = "basket_item">
-                            <span>${product_from_list.title}</span>
-                            <span>${product_from_list.price}</span>
-                            <span class="rmv_product" id_product = ${product_from_list.id}>удалить</span>
-                        </div>
+                    <div class = "basket_item">
+                        <span>${product_from_list.title}</span>
+                        <span>${product_from_list.price}</span>
+                        <span class="rmv_product" product_id=${product_from_list.id}><div class = "basket_img" ><img src="/images/delete.png" alt="корзина"></div></span>
                     </div>
                 `;
-                }
-
-            })}
-        let removeProduct = document.querySelectorAll('.rmv_product');
-        removeProduct.forEach(product => {
-            product.addEventListener('click', function(e) {
-                basket.removeProductFromBasket(e.target.id);
+                } 
             })
-        })
+        }
     }
 
     removeProductFromBasket(id) {
@@ -88,11 +82,10 @@ class Basket {
             localStorage.removeItem(id);
             this.calculate();
             this.render();
+            this.render_show_basket();
         }
-        this.render_show_basket();
-
+        
     } 
-
 }
 
 let basket = new Basket();
@@ -106,18 +99,22 @@ if (addProduct && addProduct.length > 0) {
     })
 }
 
-let ButtnBag = document.querySelector('.count_product');
-let shopping_list = document.querySelector('.basket_show');
-basket.render_show_basket();
-
-ButtnBag.addEventListener('click', function(){
-    shopping_list.classList.toggle('basket_show');
-    let delete_element = document.querySelectorAll('.rmv_product');
+let delete_element = document.querySelectorAll('.rmv_product');
+if(delete_element && delete_element.length > 0){
     delete_element.forEach(item =>{
         item.addEventListener('click', function(e){
-            basket.removeProductFromBasket(e.target.getAttribute('id_product'));
+            console.log("clicked!");
+            basket.removeProductFromBasket(e.target.getAttribute('product_id'));
         })
     })
+}
 
-    
-})
+
+
+basket.render_show_basket();
+let ButtnBag = document.querySelector('.count_product');
+let shopping_list = document.querySelector('.basket_show');
+
+ButtnBag.addEventListener('click', function(){
+    shopping_list.classList.toggle('basket_show');   
+});

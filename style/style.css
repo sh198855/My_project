@@ -456,25 +456,32 @@ header{
   display: none;
 }
 .bascket_style{
-  z-index: 100%;
   display: flex;
   flex-direction: column;
-}
-.basket_item{
-  display: flex;
   position: absolute;
   top: 54px;
-  right: 300px;
-  width: 200px;
+  right: 0px;
+  width: 250px;
   min-height: 400px;
   background-color: antiquewhite;
   border: 2px solid #274646;
   border-radius: 0 0 10px 10px;
   padding: 10px;
 }
+.basket_item{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .rmv_product{
   cursor: pointer;
+}
+
+.basket_img{
+  width: 20px;
+  height: 20px;
 }
 
 

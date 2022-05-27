@@ -49,11 +49,11 @@ if (productList_rolls) {
         let row = `<div class="card_of_section">
                         <div class="imgs_of_section">
                             <div class="img_icons">
-                                <img src="images/Vector_1.svg" alt="">
-                                <img src="images/Vector_2.svg" alt="">
-                                <img src="images/Vector_3.svg" alt="">
+                                <img src="images/Vector_1.svg" alt="pepper">
+                                <img src="images/Vector_2.svg" alt="fire">
+                                <img src="images/Vector_3.svg" alt="greenery">
                             </div>
-                            <img src="images/Frame_1.svg" alt="" class="img_icon_main">
+                            <img src="images/Frame_1.svg" alt="main card" class="img_icon_main">
                         </div>
                         <div class="inform_part">
                             <div class="left_inform_part">
@@ -76,11 +76,11 @@ if (productList_sushi) {
         let row = `<div class="card_of_section">
                         <div class="imgs_of_section">
                             <div class="img_icons">
-                                <img src="images/Vector_1.svg" alt="">
-                                <img src="images/Vector_2.svg" alt="">
-                                <img src="images/Vector_3.svg" alt="">
+                                <img src="images/Vector_1.svg" alt="pepper">
+                                <img src="images/Vector_2.svg" alt="fire">
+                                <img src="images/Vector_3.svg" alt="greenery">
                             </div>
-                            <img src="images/Frame_1.svg" alt="" class="img_icon_main">
+                            <img src="images/Frame_1.svg" alt="main card" class="img_icon_main">
                         </div>
                         <div class="inform_part">
                             <div class="left_inform_part">
@@ -103,11 +103,11 @@ if (productList_poke) {
         let row = `<div class="card_of_section">
                         <div class="imgs_of_section">
                             <div class="img_icons">
-                                <img src="images/Vector_1.svg" alt="">
-                                <img src="images/Vector_2.svg" alt="">
-                                <img src="images/Vector_3.svg" alt="">
+                                <img src="images/Vector_1.svg" alt="pepper">
+                                <img src="images/Vector_2.svg" alt="fire">
+                                <img src="images/Vector_3.svg" alt="greenery">
                             </div>
-                            <img src="images/Frame_1.svg" alt="" class="img_icon_main">
+                            <img src="images/Frame_1.svg" alt="main card" class="img_icon_main">
                         </div>
                         <div class="inform_part">
                             <div class="left_inform_part">
