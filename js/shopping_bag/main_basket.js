@@ -74,7 +74,15 @@ class Basket {
                 } 
             })
         }
+
+        document.querySelectorAll('.rmv_product').forEach(item =>{
+                item.addEventListener('click', function(e){
+                    basket.removeProductFromBasket(e.target.id);
+                }
+            );
+        });
     }
+    
 
     removeProductFromBasket(id) {
         let productInBasket = this.products.find(item => item.id == id);
