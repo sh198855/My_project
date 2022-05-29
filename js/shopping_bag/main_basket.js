@@ -68,7 +68,7 @@ class Basket {
                     <div class = "basket_item">
                         <span>${product_from_list.title}</span>
                         <span>${product_from_list.price}</span>
-                        <span class="rmv_product" product_id=${product_from_list.id}><div class = "basket_img" ><img src="/images/delete.png" alt="корзина"></div></span>
+                        <span class="rmv_product" id=${product_from_list.id}>уд</span>
                     </div>
                 `;
                 } 
@@ -77,14 +77,15 @@ class Basket {
     }
 
     removeProductFromBasket(id) {
-        let product = this.products.find(item => item.id == id); 
-        if(product){
-            localStorage.removeItem(id);
-            this.calculate();
-            this.render();
-            this.render_show_basket();
+        let productInBasket = this.products.find(item => item.id == id);
+
+        if (productInBasket){
+            this.products.splice(this.products.indexOf(productInBasket), 1);
         }
-        
+        localStorage.setItem('products', JSON.stringify(this.products));
+        this.calculate();
+        this.render();
+        this.render_show_basket(); 
     } 
 }
 
@@ -95,21 +96,9 @@ if (addProduct && addProduct.length > 0) {
     addProduct.forEach(product => {
         product.addEventListener('click', function (e) {
             basket.addProductToBasket(e.target.id);
-        })
-    })
+        });
+    });
 }
-
-let delete_element = document.querySelectorAll('.rmv_product');
-if(delete_element && delete_element.length > 0){
-    delete_element.forEach(item =>{
-        item.addEventListener('click', function(e){
-            console.log("clicked!");
-            basket.removeProductFromBasket(e.target.getAttribute('product_id'));
-        })
-    })
-}
-
-
 
 basket.render_show_basket();
 let ButtnBag = document.querySelector('.count_product');
@@ -118,3 +107,12 @@ let shopping_list = document.querySelector('.basket_show');
 ButtnBag.addEventListener('click', function(){
     shopping_list.classList.toggle('basket_show');   
 });
+
+let delete_element = document.querySelectorAll('.rmv_product');
+if(delete_element){
+    delete_element.forEach(item =>{
+        item.addEventListener('click', function(e){
+            basket.removeProductFromBasket(e.target.id);
+        });
+    });
+}
