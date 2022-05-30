@@ -476,9 +476,9 @@ header{
 }
 
 .rmv_product{
-  /*width: 20px;
+  width: 20px;
   height: 20px;
-  background-image: url('/images/delete.png');*/
+  background-image: url('/images/delete.png');
   cursor: pointer;
 }
 

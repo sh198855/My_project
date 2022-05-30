@@ -68,7 +68,8 @@ class Basket {
                     <div class = "basket_item">
                         <span>${product_from_list.title}</span>
                         <span>${product_from_list.price}</span>
-                        <span class="rmv_product" id=${product_from_list.id}>уд</span>
+                        
+                        <img src="/images/delete.svg" alt="удалить" class="rmv_product" id = ${product_from_list.id}>
                     </div>
                 `;
                 } 
