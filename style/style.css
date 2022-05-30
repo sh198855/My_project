@@ -80,8 +80,11 @@ select {
 /*////////////////////////////////HEADER///////////////////////////////*/
 
 header{
-    width: 100%;
-    position: fixed;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-top: 0px solid #aaaaaa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .head_shadow{
@@ -89,13 +92,8 @@ header{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-main{
-  display: flex;
-  width: 100%;
-}
-
 .container {
-  width: 1400px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -121,6 +119,11 @@ main{
   height: 100%;
   align-items: center;
 }
+.menu_btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
 .image_items{
   display: flex;
@@ -130,15 +133,80 @@ main{
 
 .img_log{
   display: flex;
-  margin-right: 10px;
+  margin-right: 18px;
 }
+.img_log_r{
+  margin-right: 8px;
+}
+.location_img{
+  margin-right: 8.53px;
+}
+
+.right_shiming{
+  font-family: 'Value Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFBDC8;
+}
+
+.left_block_adress{
+  font-family: 'Value Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFE091;
+}
+
+.count_product{
+  display: flex;
+  padding: 0 3px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+  background-color: #B20D30;
+  border-radius: 10px;
+  border: 0px;
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
 .price{
+    font-family: 'Value Sans Pro';
     margin-left: 8px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
+}
+.rub{
+  font-family: 'Value Sans Pro';
+  margin-left: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.text_basket{
+  font-family: 'Value Sans Pro';
+  margin-left: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
 /* for changing display in madia_content */
@@ -158,14 +226,13 @@ main{
 .img_fr_log{
   display: none;
 }
-.move_right{
-  display: flex;
-}
+
 /* end of changing display in madia_content */
 
 .block_items{
   display: flex;
   gap: 24px;
+  align-items: center;
 }
 
 .block_items_right{
@@ -181,7 +248,6 @@ main{
 
 .nav_border{
     display: flex;
-    justify-content: space-between;
     height: 100%;
     border-bottom: 1px solid #E5E5E5;
     align-items: stretch;
@@ -191,6 +257,7 @@ main{
 
 .nav_element{
     display: flex;
+    margin-right: 51px;
     justify-content: center;
     align-items: center;
 }
@@ -209,8 +276,12 @@ main{
     border-bottom: 3px solid #274646;
 }
 
+.buttons_hide{
+  display: none;
+}
+
 .block_second_nav{
-  display: flex;
+  display: flex; /*_____________________________________*/
   background-color: #FFFFFF;
   height: 52px;
 }
@@ -237,20 +308,355 @@ main{
 .second_nav_element a:hover{
     color: #274646;
     border-radius: 30px;
-    background: #E9E6E6
-    
+    background: #E9E6E6   
 }
 
 .nav_border_second{
     display: flex;
+    overflow: hidden;
     justify-content: start;
     padding: 8px 0px;
     align-items: stretch;
     gap: 20px;
 }
 
+/*////////////////////////////////END_OF_HEADER///////////////////////////////*/
 
-/*//////////////////////////////////////////MEDIA REQUESR//////////////////////////////*/
+/*////////////////////////////////MAIN_BLOCK///////////////////////////////*/
+
+/*  Cards  */
+.container_main{
+  margin: 0 auto;
+  width: auto;
+}
+.nav_block_therd{
+  padding-top: 182px;
+}
+
+.therd_nav_elements{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  overflow: auto;
+}
+
+/* scroll_bar */
+.therd_nav_elements::-webkit-scrollbar{
+  height: 2px;
+}
+.therd_nav_elements::-webkit-scrollbar-thumb:hover{
+  background: #5f5f5f;
+}
+.therd_nav_elements::-webkit-scrollbar-thumb{
+  background: #A0A0A0; 
+}
+.therd_nav_elements::-webkit-scrollbar-track{
+  background: #E5E5E5; 
+}
+/* end_scroll_bar*/
+
+.therd_nav_element{
+  height: 276px;
+  min-width: 152px;
+  margin-bottom: 34px;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 2px solid #FFBEC9;
+  padding: 2px;
+} 
+
+.nav_item_image {
+  width: auto;
+  height: 100%;
+}
+
+.therd_nav_element:hover{
+  border: 2px solid #FFBEC9;
+}
+/*  End_Cards  */
+
+/* rols_block  */
+
+/*______TAPE______*/
+
+.scroll_block{
+  width: 100%;
+}
+
+.title_block{
+  display: flex;
+  margin: 0;
+  gap: 176px;
+  margin: 48px 0 64px 0;
+  overflow: hidden;
+  height: 100px;
+  font-family: 'Rimma_sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.rols_block_color{
+  background: linear-gradient(0deg, #F293A2 -0.01%, #F7BDC7 99.99%);
+  color: #FFD8E1;
+}
+
+.sushi_block_color{
+  background: linear-gradient(0deg, #F9B147 -0.01%, #FDC944 99.99%);
+  color: #FFE091;
+}
+.poke_block_color{
+  background: linear-gradient(0deg, #001918 0%, #003D3D 100%);
+  color: #006666;
+}
+
+.animation_tape_rolls{
+  animation: animation_rolls 3s linear infinite;
+}
+
+.animation_tape_sushi{
+  animation: animation_sushi 3s linear infinite;
+}
+
+.animation_tape_poke{
+  animation: animation_poke 3s linear infinite;
+}
+
+@keyframes animation_rolls{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-533.766px);
+  }
+}
+
+@keyframes animation_sushi {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-450.766px);
+  }
+}
+
+@keyframes animation_poke {
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-942.8px);
+  }
+}
+
+
+/*_____start_shopping_bag_list_______*/
+
+.basket_show{
+  display: none;
+}
+.bascket_style{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 54px;
+  right: 0px;
+  width: 250px;
+  min-height: 400px;
+  background-color: antiquewhite;
+  border: 2px solid #274646;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+.basket_item{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rmv_product{
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/delete.png');
+  cursor: pointer;
+}
+
+.basket_img{
+  width: 20px;
+  height: 20px;
+}
+
+
+/*_____end_shopping_bag_list_______**/
+
+.product_title{
+  display: flex;
+  margin: 0;
+  line-height: 100%;
+  align-items: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/*______END_TAPE______*/
+
+.section{
+  margin-top: 64px;
+}
+
+.section_name{
+  font-family: 'Value Sans Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  color: #274646;
+  margin-bottom: 31px;
+}
+
+.cards_of_rolls_section{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 3fr);
+}
+
+.cards_of_sushi_section{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 3fr);
+}
+
+.cards_of_poke_section{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 3fr);
+}
+
+.card_of_section{
+  display: grid;
+  grid-template-rows: 200px auto;
+  max-width: 300px;
+  padding: 16px;
+  outline: 2px solid #FFF;
+  border-radius: 8px;
+}
+
+.card_of_section:hover{
+  outline: 2px solid #F7F7F7;
+}
+
+.imgs_of_section{
+  width: auto;
+  height: auto;
+  grid-template-columns: repeat(1, 12fr);
+}
+
+.img_icons{
+  display: flex;
+  gap: 8px;
+  top: 0px;
+  left: 0px;
+}
+
+.img_icon_main {
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+}
+
+.inform_part{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-template-columns: repeat(1, 12fr);
+}
+
+.left_inform_part{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.right_inform_part{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 8px;
+  align-items: center;
+}
+
+.left_inform_value_1{
+  font-family: 'Value Sans Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #6B6B6B;
+  padding-bottom: 4px;
+}
+
+.left_inform_value_2{
+  font-family: 'Value Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #757575;
+}
+
+.inform_oldprice{
+  font-family: 'Value Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration-line: line-through;
+  color: #A0A0A0;
+}
+
+.inform_newprice{
+  font-family: 'Value Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #274646;
+  background: #E9E6E6;
+  border-radius: 46px;
+  border: 0px;
+  border-color: #E9E6E6;
+  padding: 10px 23.5px;
+  text-decoration: none;
+}
+
+.inform_newprice:hover{
+  color: #FFFFFF;
+  background: #274646;
+}
+/* end_product_block  */
+
+.block_for_phone_version{
+  display: none;
+  position: fixed;
+  justify-content: space-between;
+  bottom: 10px;
+  width: 396px;
+  border-radius: 50px 50px 50px 50px;
+  height: 50px;
+  background-color: #274646;
+  padding: 17px;
+  margin-left: 16px;
+  margin-right: 16px;
+  z-index: 100;
+}
+.bascket{
+  display: flex;
+}
+
+/*////////////////////////////////END_MAIN_BLOCK///////////////////////////////*/
+
+
+/*//////////////////////////////////////////MEDIA REQUEST//////////////////////////////*/
 
 
 /*CONTAINERS*/
@@ -275,9 +681,106 @@ main{
   .block_items{
     width: 100%;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 16px;
   }
   .nav_border{
     gap: 48px;
+    margin-left: 16px;
+  }
+
+  .nav_border_second {
+    margin-left: 16px;
+  }
+
+
+  /*---main---*/
+  .section{
+    margin-left: 16.14px;
+  }
+
+  .cards_of_rolls_section{
+    grid-template-columns: repeat(1, 12fr);
+    gap: 5px;
+  }
+
+  .cards_of_sushi_section{
+    grid-template-columns: repeat(1, 12fr);
+    gap: 5px;
+  }
+
+  .cards_of_poke_section{
+    grid-template-columns: repeat(1, 12fr);
+    gap: 5px;
+  }
+  .title_block{
+    margin: 36px, 0, 64, 0;
+    height: 80px;
+    font-size: 60px;
+  }
+
+  .imgs_of_section{
+    grid-template-columns: repeat(1, 12fr);
+    margin-bottom: 21px;
+  }
+
+  .left_inform_part{
+    grid-template-columns: repeat(1, 12fr);
+    justify-content: flex-start;
+  }
+
+  .img_icon_main{
+    max-width: 136px;
+    max-height: 99px; 
+  }
+  .card_of_section{
+    grid-template-columns: minmax(70px, 136px) auto;
+    max-width: none;
+    gap: 0 20px;
+    padding: 16px 16px 4px 16px;
+    grid-template-rows: auto;
+  }
+
+  .left_inform_value_1{
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #274646;
+  }
+
+  .left_inform_value_2{
+    display: none;
+  }
+  .inform_oldprice{
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .inform_newprice{
+    font-family: 'Value Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 14px;
+    margin: 0 7px 16px 0;
+  }
+
+  .left_inform_part{
+    margin-bottom: 28px;
+  }
+  
+  .right_inform_part{
+    flex-wrap: wrap;
+  }
+    /*---end_main---*/
+  .block_for_phone_version{
+    display: flex;
   }
 }
 
@@ -304,6 +807,21 @@ main{
   .nav_border{
     gap: 48px;
   }
+
+  /*---main---*/
+  .cards_of_rolls_section{
+    grid-template-columns: repeat(2, 6fr);
+  }
+  .cards_of_sushi_section{
+    grid-template-columns: repeat(2, 6fr);
+  }
+  .cards_of_poke_section{
+    grid-template-columns: repeat(2, 6fr);
+  }
+  .card_of_section{
+    padding: 10px;
+  }
+  /*---end_main---*/
 }
 
 @media (min-width: 769px) and  (max-width: 992px) {
@@ -315,15 +833,34 @@ main{
   }
   .image_items_right{
     display: none;
+  }
 
-  }
-  .block_items{
-    width: 100%;
-    justify-content: space-between;
-  }
   .nav_border{
     gap: 48px;
   } 
+
+  /*---main---*/
+  .cards_of_rolls_section{
+    gap: 32px 26px;
+  }
+  .cards_of_sushi_section{
+    gap: 32px 26px;
+  }
+  .cards_of_poke_section{
+    gap: 32px 26px;
+  }
+  .card_of_section{
+    padding: 10px;
+  }
+  .section{
+    margin: 0 5.5px;
+  }
+  .section_name{
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 31px;
+  }
+    /*---end_main---*/
 }
 
 @media (min-width: 993px) and  (max-width: 1200px) {
@@ -333,12 +870,38 @@ main{
   .nav_border{
     gap: 48px;
   }
+  /*---main---*/
+  .card_of_section{
+    padding: 10px;
+  }
+  .imgs_of_section{
+    max-height: 200px;
+ 
+  }
+  /*---end_main---*/
 }
 
 @media (min-width: 1201px) and (max-width:1400px) {
   .container {
     width: 1140px;
   }
+  /*---main---*/
+  .cards_of_rolls_section{
+    margin-left: none;
+  }
+  .cards_of_sushi_section{
+    margin-left: none;
+  }
+  .cards_of_poke_section{
+    margin-left: none;
+  }
+  .card_of_section{
+    padding: 10px;
+  }
+  .imgs_of_section{
+    height: 200px;
+  }
+  /*---end_main---*/
 }
 
 @media (min-width:1401px) {
@@ -346,3 +909,4 @@ main{
     width: 1320px;
   }
 }
+
