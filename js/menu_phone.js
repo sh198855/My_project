@@ -3,7 +3,7 @@ var btn_open = document.querySelector('.green_vetor');
 var btn_close = document.querySelector('.pinck_vetor');
 var text_menu = document.querySelector('.text_menu');
 
-function open_mn(){
+function openMn(){
     btn_open.addEventListener('click', function(){
         btn_open.classList.toggle('hide_block_menu');
         block_hide.classList.toggle('hide_block_menu');
@@ -13,7 +13,7 @@ function open_mn(){
     });
 }
 
-function close_mn(){
+function closeMn(){
     btn_close.addEventListener('click', function(){
         block_hide.classList.toggle('hide_block_menu');
         btn_close.classList.toggle('pinck_vetor');
@@ -23,4 +23,4 @@ function close_mn(){
     });
 }
 
-export {open_mn, close_mn};
+export {openMn, closeMn};

@@ -1,4 +1,4 @@
-function scroll_card(){
+function scrollCard(){
     let speed = 2;
 
     let scrolls = document.querySelector('.therd_nav_elements');
@@ -25,5 +25,5 @@ function scroll_card(){
             e.preventDefault();})
     })   
 }
-export {scroll_card};
+export {scrollCard};
 

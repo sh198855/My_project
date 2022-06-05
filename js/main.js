@@ -1,13 +1,13 @@
-import {open_mn, close_mn} from './menu_phone.js';
-import {showbuttons, showMenu, closeMenu} from './menu.js';
-import {scroll_card} from './script.js';
+import {openMn, closeMn} from './menu_phone.js';
+import {showButtons, showMenu, closeMenu} from './menu.js';
+import {scrollCard} from './script.js';
 
-open_mn();
-close_mn();
+openMn();
+closeMn();
 
 showMenu();
 closeMenu();
-showbuttons();
+showButtons();
 
-scroll_card();
+scrollCard();
 

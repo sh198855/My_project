@@ -7,7 +7,7 @@ class Basket {
         this.getProductsOfLocalStorage();
         this.calculate();
         this.render();
-        this.render_show_basket();
+        this.renderShowBasket();
     }
 
     getProductsOfLocalStorage() {
@@ -28,7 +28,7 @@ class Basket {
         localStorage.setItem('products', JSON.stringify(this.products));
         this.calculate();
         this.render();
-        this.render_show_basket();
+        this.renderShowBasket();
     }
 
     calculate() {
@@ -57,7 +57,7 @@ class Basket {
         }
     }
 
-    render_show_basket(){
+    renderShowBasket(){
         let show_shopping_bag = document.querySelector('.bascket_style');
         show_shopping_bag.innerHTML = '';
         if(this.products.length>0){
@@ -69,7 +69,7 @@ class Basket {
                         <span>${product_from_list.title}</span>
                         <span>${product_from_list.price}</span>
                         
-                        <img src="/images/delete.svg" alt="удалить" class="rmv_product" id = ${product_from_list.id}>
+                        <img src="./images/delete.svg" alt="удалить" class="rmv_product" id = ${product_from_list.id}>
                     </div>
                 `;
                 } 
@@ -94,7 +94,7 @@ class Basket {
         localStorage.setItem('products', JSON.stringify(this.products));
         this.calculate();
         this.render();
-        this.render_show_basket(); 
+        this.renderShowBasket(); 
     } 
 }
 
@@ -109,7 +109,7 @@ if (addProduct && addProduct.length > 0) {
     });
 }
 
-basket.render_show_basket();
+basket.renderShowBasket();
 let ButtnBag = document.querySelector('.count_product');
 let shopping_list = document.querySelector('.basket_show');
 

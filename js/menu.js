@@ -7,15 +7,10 @@ var buttons = document.querySelector('.buttons_hide')
 
 
 
-function showbuttons(){
+function showButtons(){
     let elements = document.querySelectorAll('.nav_element');
     elements.forEach((element)=>{
-        element.addEventListener('mouseover', function(e){
-            //document.getElementById('buttn').style.display = 'flex';
-            buttons.classList.toggle('buttons_hide');
-        })
-        element.addEventListener('mouseout', function(e){
-            //document.getElementById('buttn').style.display = 'none';
+        element.addEventListener('click', function(e){
             buttons.classList.toggle('buttons_hide');
         })
     })
@@ -41,4 +36,4 @@ function closeMenu(){
     });
 }
 
-export {showbuttons, showMenu, closeMenu};
+export {showButtons, showMenu, closeMenu};
