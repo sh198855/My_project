@@ -80,12 +80,20 @@
 .mn_block_items_right{
     display: flex;
     gap: 24px;
+    margin-right: 29px;
 }
 
 .mn_image_items{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.mn_items_location{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -12px;
 }
 
 .mn_right_shiming{

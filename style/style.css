@@ -131,6 +131,13 @@ header{
   align-items: center;
 }
 
+.items_location{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -8px;
+}
+
 .img_log{
   display: flex;
   margin-right: 18px;
@@ -217,6 +224,7 @@ header{
   font-size: 14px;
   color: #A0A0A0;
   text-decoration: none;
+  margin-left: 6px;
 }
 
 .hide{
@@ -238,6 +246,7 @@ header{
 .block_items_right{
   display: flex;
   gap: 24px;
+  margin-right: 40px;
 }
 
 .block_nav{
@@ -788,9 +797,7 @@ header{
   .container {
     width: 540px;
   }
-  .phone{
-    display: none;
-  }
+
   .hide{
     display: none;
   }
