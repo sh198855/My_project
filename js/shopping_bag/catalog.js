@@ -1,4 +1,4 @@
-const catalog = [
+export const catalog = [
     {
         id: 1,
         price: 1925,
@@ -44,7 +44,7 @@ const catalog = [
 ]
 
 
-function ProductCardRender(catalog){
+export function productCardRender(catalog){
     var row ='';
     var product_cards = '';
  
@@ -77,12 +77,7 @@ function ProductCardRender(catalog){
     return row;
 }
 
-let product_rolls = document.querySelector('.cards_of_rolls_section');
-product_rolls.innerHTML = ProductCardRender(catalog);
 
-let product_sushi = document.querySelector('.cards_of_sushi_section');
-product_sushi.innerHTML = ProductCardRender(catalog);
 
-let product_poke = document.querySelector('.cards_of_poke_section');
-product_poke.innerHTML = ProductCardRender(catalog);
+
 

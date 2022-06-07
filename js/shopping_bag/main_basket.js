@@ -1,4 +1,6 @@
-class Basket {
+import {catalog} from './catalog.js';
+
+export class Basket {
 
     constructor() {
         this.products = [];
@@ -20,7 +22,7 @@ class Basket {
         if (product) {
             let productInBasket = this.products.find(item => item.id == id);
             if (productInBasket) {
-                productInBasket.quantity++;
+                productInBasket.quantity++; 
             } else {
                 this.products.push({id: product.id, quantity: 1})
             }
@@ -67,8 +69,7 @@ class Basket {
                     show_shopping_bag.innerHTML += `
                     <div class = "basket_item">
                         <span>${product_from_list.title}</span>
-                        <span>${product_from_list.price}</span>
-                        
+                        <span>${product_from_list.price}</span>                       
                         <img src="./images/delete.svg" alt="удалить" class="rmv_product" id = ${product_from_list.id}>
                     </div>
                 `;
@@ -78,12 +79,11 @@ class Basket {
 
         document.querySelectorAll('.rmv_product').forEach(item =>{
                 item.addEventListener('click', function(e){
-                    basket.removeProductFromBasket(e.target.id);
+                    this.removeProductFromBasket(e.target.id);
                 }
             );
         });
     }
-    
 
     removeProductFromBasket(id) {
         let productInBasket = this.products.find(item => item.id == id);
@@ -98,30 +98,4 @@ class Basket {
     } 
 }
 
-let basket = new Basket();
 
-let addProduct = document.querySelectorAll('.inform_newprice');
-if (addProduct && addProduct.length > 0) {
-    addProduct.forEach(product => {
-        product.addEventListener('click', function (e) {
-            basket.addProductToBasket(e.target.id);
-        });
-    });
-}
-
-basket.renderShowBasket();
-let ButtnBag = document.querySelector('.count_product');
-let shopping_list = document.querySelector('.basket_show');
-
-ButtnBag.addEventListener('click', function(){
-    shopping_list.classList.toggle('basket_show');   
-});
-
-let delete_element = document.querySelectorAll('.rmv_product');
-if(delete_element){
-    delete_element.forEach(item =>{
-        item.addEventListener('click', function(e){
-            basket.removeProductFromBasket(e.target.id);
-        });
-    });
-}
