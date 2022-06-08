@@ -76,13 +76,7 @@ export class Basket {
                 } 
             })
         }
-
-        document.querySelectorAll('.rmv_product').forEach(item =>{
-                item.addEventListener('click', function(e){
-                    this.removeProductFromBasket(e.target.id);
-                }
-            );
-        });
+  
     }
 
     removeProductFromBasket(id) {

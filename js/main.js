@@ -17,14 +17,14 @@ scrollCard();
 
 //_________________Зарисовка карточек в теле шаблона________________//
 
-let product_rolls = document.querySelector('.cards_of_rolls_section');
-product_rolls.innerHTML = productCardRender(catalog);
+let productRolls = document.querySelector('.cards_of_rolls_section');
+productRolls.innerHTML = productCardRender(catalog);
 
-let product_sushi = document.querySelector('.cards_of_sushi_section');
-product_sushi.innerHTML = productCardRender(catalog);
+let productSushi = document.querySelector('.cards_of_sushi_section');
+productSushi.innerHTML = productCardRender(catalog);
 
-let product_poke = document.querySelector('.cards_of_poke_section');
-product_poke.innerHTML = productCardRender(catalog);
+let productPoke = document.querySelector('.cards_of_poke_section');
+productPoke.innerHTML = productCardRender(catalog);
 
 
 
@@ -44,17 +44,17 @@ if (addProduct && addProduct.length > 0) {
 
 basket.renderShowBasket();
 let ButtnBag = document.querySelector('.count_product');
-let shopping_list = document.querySelector('.basket_show');
+let shoppingList = document.querySelector('.basket_show');
 
 ButtnBag.addEventListener('click', function(){
-    shopping_list.classList.toggle('basket_show');   
+    shoppingList.classList.toggle('basket_show');   
 });
 
-let delete_element = document.querySelectorAll('.rmv_product');
-if(delete_element){
-    delete_element.forEach(item =>{
-        item.addEventListener('click', function(e){
+let bascketlist = document.querySelector('.bascket_style');
+if(bascketlist){
+    bascketlist.addEventListener('click', function(e){
+        if(e.target.classList.contains('rmv_product')) {
             basket.removeProductFromBasket(e.target.id);
-        });
-    });
+        }
+    })
 }

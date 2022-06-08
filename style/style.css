@@ -797,16 +797,11 @@ header{
   .container {
     width: 540px;
   }
+  .phone{
+    display: none;
+  }
 
-  .hide{
-    display: none;
-  }
-  .img_fr_log{
-    display: flex;
-  }
-  .block_items_right{
-    display: none;
-  }
+
   .block_items{
     width: 100%;
     justify-content: space-between;
