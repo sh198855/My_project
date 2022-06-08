@@ -5,65 +5,293 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <header>
+    <header class="hide_header">
         <div class="block_head block_first">
             <div class="container first_block_items">
                 <div class="block_items">
                     <div class="image_items">
-                        <img src="images/menu.png" alt="" class="img_log">
-                        <img src="images/Frame_log.png" alt="" class="img_fr_log">
-                        <img src="images/logo.png" alt="" class="img_log hide">
+                        <button class="menu_btn"><img src="images/menu.png" alt="Меню" class="img_log"></button>
+                        <img src="images/Frame_log.png" alt="Логотип" class="img_fr_log">
+                        <img src="images/logo.png" alt="Логотип" class="img_log hide">
+                        <a class="phone" href="tel:+78127171919">+7 812 717-19-19</a>
                     </div>
-                    <p class="phone">+7 812 717-19-19</p>
-                    <div class="image_items move_right">
-                        <img src="images/location.png" alt="" class="img_log">
-                        <img src="images/adress.png" alt="" class="img_log">
+                    <div class="items_location">
+                        <img src="images/location.png" alt="Адрес" class="location_img">
+                        <p class="left_block_adress">Укажите адрес</p>
                     </div>
                 </div>
-                <div class="block_items">
+                <div class="block_items_right">
                     <div class="image_items">
-                        <img src="images/Frame.png" alt="" class="img_log hide">
-                        <img src="images/shimling.png" alt="" class="img_log hide">    
+                        <img src="images/Frame.png" alt="Логотип" class="img_log_r">
+                        <p class="right_shiming">Шиминги</p>  
                     </div>
                     <div class="image_items">
-                        <img src="images/bascket.png" alt="" class="img_log hide">
-                        <p class="hide">Цена ₽</p>
-                    </div>
-                    
+                        <img src="images/shopping_bag.svg" alt="Корзина">
+                        <button class="count_product"><p>12</p></button>
+                        <p class="price">2586</p><span class="rub">₽</span>
+                    </div>  
                 </div>
             </div>
         </div>
+        <div class="basket_show"><div class="bascket_style"></div></div>
+
         <div class="block_head block_nav">
             <nav class="container nav_border">
-                <div class="nav_element"><a href="">Новинки</a></div>
-                <div class="nav_element"><a href="">Роллы</a></div>
-                <div class="nav_element"><a href="">Суши</a></div>
-                <div class="nav_element"><a href="">Десерты</a></div>
-                <div class="nav_element"><a href="">Закуски</a></div>
-                <div class="nav_element"><a href="">Наборы</a></div>
-                <div class="nav_element"><a href="">Поке и боулы</a></div>
-                <div class="nav_element"><a href="">Воки</a></div>
-                <div class="nav_element"><a href="">Авторское</a></div>
-                <div class="nav_element"><a href="">Онигири</a></div>
-                <div class="nav_element"><a href="">Топпинги</a></div>
+                <div class="nav_element"><a href="#">Новинки</a></div>
+                <div class="nav_element"><a href="#">Роллы</a></div>
+                <div class="nav_element"><a href="#">Суши</a></div>
+                <div class="nav_element"><a href="#">Десерты</a></div>
+                <div class="nav_element"><a href="#">Закуски</a></div>
+                <div class="nav_element"><a href="#">Наборы</a></div>
+                <div class="nav_element"><a href="#">Поке и боулы</a></div>
+                <div class="nav_element"><a href="#">Воки</a></div>
+                <div class="nav_element"><a href="#">Авторское</a></div>
+                <div class="nav_element"><a href="#">Онигири</a></div>
+                <div class="nav_element"><a href="#">Топпинги</a></div>
             </nav>
-        </div>
-
-            
-        <div class="block_head block_second_nav">
-            <nav class="container nav_border_second">
-                <div class="second_nav_element"><a href="">классические</a></div>
-                <div class="second_nav_element"><a href="">опалённые</a></div>
-                <div class="second_nav_element"><a href="">запечённые</a></div>
-                <div class="second_nav_element"><a href="">мини</a></div>
-                <div class="second_nav_element"><a href="">темпура</a></div>
-            </nav>
+        </div>  
+        <div class="buttons_hide" id="buttn"> 
+            <div class="block_head block_second_nav">
+                <nav class="container nav_border_second">
+                    <div class="second_nav_element"><a href="#">классические</a></div>
+                    <div class="second_nav_element"><a href="#">опалённые</a></div>
+                    <div class="second_nav_element"><a href="#">запечённые</a></div>
+                    <div class="second_nav_element"><a href="#">мини</a></div>
+                    <div class="second_nav_element"><a href="#">темпура</a></div>
+                </nav>
+            </div>
         </div>
 </header>
-<hr class="head_shadow">
 
+
+<main class="hide_main">
+    <nav class="nav_block_therd">
+        <div class="therd_nav_elements container">
+            <div class="therd_nav_element"><img src="images/2_1.png" class="nav_item_image"></div>
+            <div class="therd_nav_element"><img src="images/2_2.png" class="nav_item_image"></div>
+            <div class="therd_nav_element"><img src="images/2_3.png" class="nav_item_image"></div>
+            <div class="therd_nav_element"><img src="images/2_1.png" class="nav_item_image"></div>
+            <div class="therd_nav_element"><img src="images/2_1.png" class="nav_item_image"></div>
+            <div class="therd_nav_element"><img src="images/2_1.png" class="nav_item_image"></div>
+            <div class="therd_nav_element"><img src="images/2_3.png" class="nav_item_image"></div>
+            <div class="therd_nav_element"><img src="images/2_1.png" class="nav_item_image"></div>
+            <div class="therd_nav_element"><img src="images/2_1.png" class="nav_item_image"></div>
+            <div class="therd_nav_element"><img src="images/2_1.png" class="nav_item_image"></div>
+        </div>
+    </nav>
+
+        <!--start button for iPhone versiov-->
+    
+        <div class="block_for_phone_version">
+            <div class="bascket"> 
+                <div><img src="images/shopping_bag.svg" alt="Корзина"></div>
+                <div class="count_product">12</div>
+                <p class="text_basket">Корзина</p>
+            </div>
+            <div>
+                <p class="price">2586₽</p>
+            </div>
+        </div>
+    
+         <!--end button for iPhone versiov-->
+    <div class="title_block rols_block_color">
+        <div class="product_title animation_tape_rolls">РОЛЛЫ</div>
+        <div class="product_title animation_tape_rolls">РОЛЛЫ</div>
+        <div class="product_title animation_tape_rolls">РОЛЛЫ</div>
+        <div class="product_title animation_tape_rolls">РОЛЛЫ</div>
+        <div class="product_title animation_tape_rolls">РОЛЛЫ</div>
+    </div>
+
+    <!-- Section of rols -->
+    <section class="container">
+        <section class="section">
+            <h1 class = "section_name">классические</h1>
+            <div class="cards_of_rolls_section"></div>
+        </section>
+    </section>
+
+
+    <div class="title_block sushi_block_color">
+        <div class="product_title animation_tape_sushi">СУШИ</div>
+        <div class="product_title animation_tape_sushi">СУШИ</div>
+        <div class="product_title animation_tape_sushi">СУШИ</div>
+        <div class="product_title animation_tape_sushi">СУШИ</div>
+        <div class="product_title animation_tape_sushi">СУШИ</div>
+        <div class="product_title animation_tape_sushi">СУШИ</div>
+    </div>
+    <!-- Section of sushi -->
+    <section class="container">
+        <section class="section">
+            <h1 class = "section_name">классические</h1>
+            <div class="cards_of_sushi_section"></div>
+        </section>
+    </section>
+
+    <div class="title_block poke_block_color">
+        <div class="product_title animation_tape_poke">Поке и боулы</div>
+        <div class="product_title animation_tape_poke">Поке и боулы</div>
+        <div class="product_title animation_tape_poke">Поке и боулы</div> 
+        <div class="product_title animation_tape_poke">Поке и боулы</div> 
+    </div>
+    <!-- Section of poke -->
+    <section class="container">
+        <section class="section">
+            <h1 class = "section_name">классические</h1>
+            <div class="cards_of_poke_section"></div>
+        </section>
+    </section>
+
+</main> 
+<footer class="hide_footer">
+    <div class="block_footer">
+        <div class="block_footer_items">
+            <div class="footer_links">
+                <div class="footer_links_text_decor"><a href="#">вход</a></div>
+                <div class="footer_links_text_decor"><a href="#">доставка</a></div>
+                <div class="footer_links_text_decor"><a href="#">акции</a></div>
+                <div class="footer_links_text_decor"><a href="#">отзывы</a></div>
+                <div class="footer_links_text_decor"><a href="#">связаться с нами</a></div>
+                <div class="footer_links_text_decor"><a href="#">о нас</a></div>
+                <div class="footer_links_text_decor"><a href="#">вакансии</a></div>
+            </div>
+            <div class="footer_logo">
+                <div class="bl_footer_line"><div class="footer_line"></div></div>
+                <div class="logo_f"><img src="images/logo-footer.svg" alt="Логотип"></div>
+                <div class="second_logo"><img src="images/footer_logo.svg" alt="Логотип"></div>
+            </div>
+            <div class="footer_apps">
+                <img src="images/Instagram.svg" alt="Instagram">
+                <img src="images/WhatsApp.svg" alt="WhatsApp">
+                <img src="images/Telegram.svg" alt="Telegram">
+                <img src="images/VK_.svg" alt="VK">
+            </div>  
+        </div>   
+    </div>
+    <div class="footer_bottom">
+        <div class="bottom_left">
+            <div><span>Шимийо © 2022</span></div>
+            <div><a href="#">Политика конфиденциальности</a></div>
+            <div><a href="#">Пользовательское соглашение</a></div>
+        </div>
+        
+        <div class="bottom_right">
+            <div class="bottom_right_text"> 
+                <span>
+                    <mark>Наш </mark>
+                    <mark>надежный digital</mark>
+                    <mark>-</mark>
+                    <mark>партнер:</mark>
+                </span>
+            </div>
+            <img src="images/sunweb.svg" alt="Логотоп компании">
+        </div>
+    </div>
+</footer>
+
+<!--------------------------------------------------------START MENU-------------------------------------------------------->
+
+<div class="display_menu">
+    <div class="mn_block_head">
+        <div class="mn_container mn_first_block_items">
+            <div class="mn_block_items">
+                <div class="mn_image_items">
+                    <button class="btn_close_menu"><img src="images/close.svg" alt="Закрыть меню"></button>
+                    <img src="images/black_logo.svg" alt="Логотип" class="mn_img_fr_log">
+                    <img src="images/mn_logo.svg" alt="Логотип" class="mn_img_log mn_hide">
+                    <a class="mn_phone" href="tel:+78127171919">+7 812 717-19-19</a>
+                </div>
+                
+                <div class="mn_items_location">
+                    <img src="images/mn_location.svg" alt="Адрес" class="location_log">
+                    <p class="mn_left_block_adress">Укажите адрес</p>
+                </div>
+            </div>
+            <div class="mn_block_items_right">
+                <div class="mn_image_items">
+                    <img src="images/mn_logo_rt.svg" alt="Логотип" class="mn_img_log">
+                    <p class="mn_right_shiming">Шиминги</p>  
+                </div>
+                <div class="mn_image_items">
+                    <img src="images/mn_bag.svg" alt="Корзина">
+                    <div class="mn_count_product">12</div>
+                    <p class="mn_price">2586₽</p>
+                </div>  
+            </div>
+        </div>
+    </div>  
+
+    <div class="menu">
+        <!--start mobile menu--->
+        <div class="mobile_menu">
+            <div class="mobile_items">
+                <button class="green_vetor"><img src="images/Vector_green.svg" alt="Стрелка"></button>
+                <button class="pinck_vetor"><img src="images/Vector_pinck.svg" alt="Стрелка"></button>
+                <span class="mobile_menu_text">меню</span>
+            </div>
+        </div>
+        <!--end mobile menu--->
+
+        <div class="left_side hide_block_menu">
+            <span class="text_menu">меню</span>
+            <nav class="left_links_menu">
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Новинки</a></div>
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Роллы</a></div>
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Напитки</a></div>
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Десерты</a></div>
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Закуски</a></div>
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Наборы</a></div>
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Поке и боулы</a></div>
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Воки</a></div>
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Авторское</a></div>
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Онигири</a></div>
+                <div class="left_links_menu_text"><a href="#" class="left_text_decor">Топпинги</a></div>  
+            </nav>
+        </div>
+        <div class="right_side">
+            <div class="right_side_items">
+                <div class="right_links_text">
+                    <div class="right_links_text_decor"><a href="#">вход</a></div>
+                    <div class="right_links_text_decor"><a href="#">доставка</a></div>
+                    <div class="right_links_text_decor"><a href="#">акции</a></div>
+                    <div class="right_links_text_decor"><a href="#">отзывы</a></div>
+                    <div class="right_links_text_decor"><a href="#">связаться с нами</a></div>
+                    <div class="right_links_text_decor"><a href="#">о нас</a></div>
+                    <div class="right_links_text_decor"><a href="#">вакансии</a></div>
+                </div>
+                <div><hr class="line_style"></div>
+                <div class="right_logo_apps">  
+                    <div class="logo"><img src="images/logo-footer.svg" alt="Логотип"></div>
+                    <div class="sec_logo"><img src="images/footer_logo.svg" alt="Логотип"></div>
+                    <div class="apps">
+                        <img src="images/Instagram.svg" alt="Instagram">
+                        <img src="images/WhatsApp.svg" alt="WhatsApp">
+                        <img src="images/Telegram.svg" alt="Telegram">
+                        <img src="images/VK_.svg" alt="VK">
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>   
+    
+    <div class="mn_block_for_phone_version">
+        <div class="mn_bascket"> 
+            <div><img src="images/mn_bag.svg" alt="Корзина"></div>
+            <div class="mn_count_product">12</div>
+            <p class="mn_price">Корзина</p>
+        </div> 
+        <div>
+            <p class="mn_price">2586₽</p>
+        </div>
+    </div>
+</div>
+<script type="module" src="./js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
